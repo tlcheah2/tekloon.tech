@@ -11,7 +11,6 @@ const html = `<html lang="en">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
 
   <title>Frontend Mentor | Four card feature section</title>
 
