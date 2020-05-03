@@ -10,7 +10,7 @@ export default ({ data }) => (
         <Seo />
        {data.allMarkdownRemark.edges.map(({ node }) => 
             <PostListItem
-                key={node.id}
+                key={node.id.toString()}
                 slug={node.fields.slug}
                 title={node.frontmatter.title}
                 tags={node.frontmatter.tags}

@@ -11,7 +11,6 @@ export default (props) => (
         <div className="tag-container">
             {props.tags.map((tag) => <Tag tag={tag} />)}
         </div>        
-        
     </div>
  );
 
