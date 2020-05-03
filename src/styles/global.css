@@ -111,8 +111,9 @@ hr {
 }
 
 .container, .post-list-item-container {
-    max-width: 60%;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 1.5em;
 }
 
 /* Post List Item */
@@ -160,6 +161,12 @@ hr {
 /* Tag */
 .tag-container {
     display: flex;
+}
+
+@media (max-width: 600px) {
+    .container, .post-list-item-container {
+        max-width: 100%;
+    }
 }
 
 
