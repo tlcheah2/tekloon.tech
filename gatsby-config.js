@@ -11,8 +11,8 @@ module.exports = {
     description: 'Personal Blog to talk about Website Development and Mobile Development',
     author: 'Tek Loon',
     url: 'https://tekloon.dev',
-    twitterUsernameL '@TekLoonCheah',
-    
+    siteUrl: 'https://tekloon.dev',
+    twitterUsername: `@TekLoonCheah`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
@@ -68,6 +68,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-107667557-2",
+      },
+    },
+    `gatsby-plugin-sitemap`,
   ],
 
 }
