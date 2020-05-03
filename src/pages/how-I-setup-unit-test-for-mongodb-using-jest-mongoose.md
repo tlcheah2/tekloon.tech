@@ -1,5 +1,4 @@
 ---
-slug: "posts/how-i-setup-unit-test-for-mongodb-using-jest-mongoose"
 date: "2019-09-03"
 title: "How I Setup Unit Test for MongoDB using Jest & Mongoose"
 description: "A detailed step-by-step guide for MongoDB Unit Test with Explanation"
