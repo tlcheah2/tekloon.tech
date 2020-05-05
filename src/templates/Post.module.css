@@ -34,6 +34,15 @@ code {
     font-size: .875rem;
 }
 
+blockquote {
+    border-left: 5px solid tomato;
+}
+
+blockquote p {
+    background-color: var(--bg);
+    padding-left: 2em;
+}
+
 
 .published-date {
     font-size: 0.875rem;
