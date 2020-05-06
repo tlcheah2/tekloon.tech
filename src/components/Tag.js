@@ -6,6 +6,9 @@ const tagStyle = {
     'angular': { backgroundColor: '#B52E31', color: 'white' },
     'gatsby': { backgroundColor: '#663399', color: 'white'},
     'css': { backgroundColor: '#2965f1', color: 'white', textTransform: 'uppercase' },
+    'cli': { backgroundColor: 'var(--textNormal)', color: 'var(--bg)', textTransform: 'uppercase' },
+
+
 }
 
 export default (props) => {
