@@ -39,7 +39,7 @@ const products = [
 </div>
 ```
 
-If you look the above code, it created 3 `<div>` element. But in fact, there are 2 `div` is not required. We only create 2 more nested div for the `*ngFor` and `*ngIf` directive sake.
+If you look the above code, it created 3 `<div>` element. But in fact, there are 2 `div` is not required. We created 2 more nested div for the `*ngFor` and `*ngIf` directive sake.
 
 ## Using ng-container to optimize
 
