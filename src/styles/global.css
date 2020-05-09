@@ -181,6 +181,7 @@ hr {
     .post-date {
         padding-left: 0;
         text-align: left;
+        width: 100%;
     }
 }
 
