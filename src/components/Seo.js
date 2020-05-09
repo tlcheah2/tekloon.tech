@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, isBlogPost }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -12,6 +12,8 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            twitterUsername
+            image
           }
         }
       }
@@ -20,6 +22,12 @@ function SEO({ description, lang, meta, title }) {
 
   const metaTitle = title || site.siteMetadata.title;
   const metaDescription = description || site.siteMetadata.description
+  if (isBlogPost) {
+    meta.push({
+      property: `og:type`,
+      content: 'article',
+    })
+  }
   return (
     <Helmet
       htmlAttributes={{
@@ -32,6 +40,7 @@ function SEO({ description, lang, meta, title }) {
           name: `description`,
           content: metaDescription,
         },
+        // OpenGraph Tags
         {
           property: `og:title`,
           content: title,
@@ -41,16 +50,21 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: site.siteMetadata.image,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
+        // Twitter Card tags
         {
           name: `twitter:card`,
           content: `summary`,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.twitterUsername,
         },
         {
           name: `twitter:title`,
@@ -59,6 +73,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: site.siteMetadata.image,
         },
       ].concat(meta)}
     />
