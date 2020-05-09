@@ -13,6 +13,12 @@ module.exports = {
     url: 'https://tekloon.dev',
     siteUrl: 'https://tekloon.dev',
     twitterUsername: `@TekLoonCheah`,
+    image: 'https://tekloon.dev/images/tekloon.jpg',
+    organization: {
+      name: 'Tek Loon Blog',
+      url: 'https://tekloon.dev',
+      logo: 'https://tekloon.dev/icons/icon-512x512.png',
+    },
   },
   plugins: [
     `gatsby-plugin-sharp`,
