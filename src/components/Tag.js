@@ -7,6 +7,7 @@ const tagStyle = {
     'gatsby': { backgroundColor: '#663399', color: 'white'},
     'css': { backgroundColor: '#2965f1', color: 'white', textTransform: 'uppercase' },
     'cli': { backgroundColor: 'var(--textNormal)', color: 'var(--bg)', textTransform: 'uppercase' },
+    'linux': { backgroundColor: 'var(--textNormal)', color: 'var(--bg)', textTransform: 'uppercase' },
 }
 
 export default (props) => {
