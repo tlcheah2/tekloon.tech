@@ -13,7 +13,7 @@ Firstly, what is reserved port? Reserved port is a set of port numbers ranging f
 
 ## Problem Statement
 
-When you're trying to start your Node project using a reserved port in Linux, you will most likely to see this error.
+When you're trying to start your Node project using a reserved port in Linux, you will most likely see this error.
 
 > ERR 0.0.0.0:443 Permission denied 
 
@@ -31,7 +31,7 @@ Luckily, I found a pretty good solution for my use case which is using `setcap`
 
 ## Solution
 
-`setcap` basically allows me to add the capability of `non-root port binding` to the binary. It simply means even though I am not root user, I can run my project using a reserved port.
+`setcap` is a Linux command and it basically allows me to add the capability of `non-root port binding` to the binary. It simply means even though I am not root user, I can run my project using a reserved port.
 
 However, as this capability is added to binary. Which in my use case, I am running Nodejs project, so I should add this capability to my `node` binary.
 
