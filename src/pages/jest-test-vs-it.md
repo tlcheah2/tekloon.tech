@@ -5,7 +5,7 @@ tags:
   - javascript
 ---
 
-![Unit Test written with Jest](https://images.unsplash.com/photo-1576444356170-66073046b1bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)
+<!-- ![Unit Test written with Jest](https://images.unsplash.com/photo-1576444356170-66073046b1bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) -->
 
 Have you ever wondered or confused about `test()` and  `it()` in Jest framework?
 
@@ -67,6 +67,7 @@ The process of discovery is fun and it's refreshing. The "Why" is the key to dri
 Last but not least, my wild guess could be wrong. If any members from Jest team knew the answer, please let me know.
 
 I hope this post brings you some motivation and thanks for reading.
-## Credits
 
-Photo by [Ferenc Almasi](https://unsplash.com/@flowforfrank) on Unsplash
+<!-- ## Credits
+
+Photo by [Ferenc Almasi](https://unsplash.com/@flowforfrank) on Unsplash -->
