@@ -8,11 +8,12 @@ const tagStyle = {
     'css': { backgroundColor: '#2965f1', color: 'white', textTransform: 'uppercase' },
     'cli': { backgroundColor: 'var(--textNormal)', color: 'var(--bg)', textTransform: 'uppercase' },
     'linux': { backgroundColor: 'var(--textNormal)', color: 'var(--bg)', textTransform: 'uppercase' },
+    'react': { backgroundColor: '#61DBFB', color: 'black' },
+    'default': { backgroundColor: 'var(--textNormal)', color: 'var(--bg)' }
 }
 
 export default (props) => {
-    console.log('props', props);
-    const style = tagStyle[props.tag];
+    const style = tagStyle[props.tag] || tagStyle['default'];
     return (
         <div
             key={props.tag}
