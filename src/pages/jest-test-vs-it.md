@@ -5,7 +5,7 @@ tags:
   - javascript
 ---
 
-<!-- ![Unit Test written with Jest](https://images.unsplash.com/photo-1576444356170-66073046b1bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) -->
+![Unit Test written with Jest](https://images.unsplash.com/photo-1576444356170-66073046b1bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)
 
 Have you ever wondered or confused about `test()` and  `it()` in Jest framework?
 
@@ -20,7 +20,6 @@ Personally, I have been using `it()` for quite some time. Recently, a thought of
 I have been told that `it()` and `test()` is behaving the same way and I decided to verify it. After some searching and read through the Jest [documentation](https://jestjs.io/docs/en/api#testname-fn-timeout). The documentation says:
 
 > Also under the alias: it(name, fn, timeout)
-
 
 Although the documentation already speaks for it, I decided to go straight to Jest [repo](https://github.com/facebook/jest) and navigate through the source code.
 
@@ -68,6 +67,6 @@ Last but not least, my wild guess could be wrong. If any members from Jest team 
 
 I hope this post brings you some motivation and thanks for reading.
 
-<!-- ## Credits
+## Credits
 
-Photo by [Ferenc Almasi](https://unsplash.com/@flowforfrank) on Unsplash -->
+Photo by [Ferenc Almasi](https://unsplash.com/@flowforfrank) on Unsplash
