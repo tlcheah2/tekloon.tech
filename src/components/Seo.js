@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, isBlogPost }) {
+function SEO({ description, lang, meta, title, isBlogPost, path }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -14,6 +14,7 @@ function SEO({ description, lang, meta, title, isBlogPost }) {
             author
             twitterUsername
             image
+            url
           }
         }
       }
@@ -23,26 +24,42 @@ function SEO({ description, lang, meta, title, isBlogPost }) {
   const metaTitle = title || site.siteMetadata.title;
   const metaDescription = description || site.siteMetadata.description
   let twitterImage = site.siteMetadata.image;
+  let canonical = `${site.url}`;
   if (isBlogPost) {
     meta.push({
       property: `og:type`,
       content: 'article',
     })
     twitterImage = site.siteMetadata.articleImage
+    canonical += path
   }
   return (
-    <Helmet
+    <Helmet defer={false}
       htmlAttributes={{
-        lang: lang || 'en',
+        lang,
       }}
       title={metaTitle} 
       titleTemplate={`%s`}
+      link={
+        canonical
+          ? [
+              {
+                rel: "canonical",
+                href: canonical,
+              },
+            ]
+          : []
+      }
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         // OpenGraph Tags
+        {
+          property: `og:url`,
+          content: canonical,
+        },
         {
           property: `og:title`,
           content: title,
@@ -60,37 +77,28 @@ function SEO({ description, lang, meta, title, isBlogPost }) {
           content: `website`,
         },
         // Twitter Card tags
-        // {
-        //   name: `twitter:card`,
-        //   content: `summary_large_image`,
-        // },
-        // {
-        //   name: `twitter:creator`,
-        //   content: site.siteMetadata.twitterUsername,
-        // },
-        // {
-        //   name: `twitter:site`,
-        // },
-        // {
-        //   name: `twitter:title`,
-        //   content: title,
-        // },
-        // {
-        //   name: `twitter:description`,
-        //   content: metaDescription,
-        // },
-        // {
-        //   name: `twitter:image`,
-        //   content: site.siteMetadata.image,
-        // },
+        {
+          name: `twitter:card`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.twitterUsername,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: twitterImage,
+        },
       ].concat(meta)}
     >
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content={site.siteMetadata.twitterUsername} />
-      <meta name="twitter:creator" content={site.siteMetadata.twitterUsername} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={metaDescription} />
-      <meta name="twitter:image" content={twitterImage} />
     </Helmet>
   )
 }

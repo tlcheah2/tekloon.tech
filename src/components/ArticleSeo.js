@@ -66,7 +66,7 @@ export default (props) => {
     ] : baseSchema;
     
     return (
-        <Helmet>
+        <Helmet defer={false}>
             {/* Schema.org tags */}
             <script type="application/ld+json">{JSON.stringify(schema)}</script>
         </Helmet>
