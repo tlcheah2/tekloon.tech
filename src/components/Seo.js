@@ -53,7 +53,7 @@ function SEO({ description, lang, meta, title, isBlogPost }) {
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.image,
+          content: twitterImage,
         },
         {
           property: `og:type`,
