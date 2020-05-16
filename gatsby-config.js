@@ -8,12 +8,13 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'Tek Loon',
-    description: 'Personal Blog to talk about Website Development and Mobile Development',
+    description: `Tek Loon's Blog for Javascript and Web Development`,
     author: 'Tek Loon',
     url: 'https://tekloon.dev',
     siteUrl: 'https://tekloon.dev',
     twitterUsername: `@TekLoonCheah`,
     image: 'https://tekloon.dev/images/tekloon.jpg',
+    articleImage: 'https://tekloon.dev/images/article-stock-photo.jpeg',
     organization: {
       name: 'Tek Loon Blog',
       url: 'https://tekloon.dev',
