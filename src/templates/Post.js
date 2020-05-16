@@ -15,8 +15,7 @@ export default ({ data }) => {
     const { slug } = post.fields;
     return (
         <>
-            <NavBar />
-            <SEO title={post.frontmatter.title} description={post.excerpt} isBlogPost={true} />
+            <SEO title={post.frontmatter.title} description={post.excerpt} isBlogPost={true} path={slug} />
             <ArticleSeo 
               title={post.frontmatter.title} 
               description={post.excerpt}
@@ -27,6 +26,7 @@ export default ({ data }) => {
               imageUrl={siteMetadata.image}
               organization={siteMetadata.organization}
             />
+            <NavBar />
             <Layout>
                 <h1 className={styles.postTitle}>{post.frontmatter.title}</h1>
                 <p className={styles.publishedDate}>Published {post.frontmatter.date}</p>
