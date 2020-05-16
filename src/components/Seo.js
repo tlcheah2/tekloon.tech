@@ -14,6 +14,7 @@ function SEO({ description, lang, meta, title, isBlogPost, path }) {
             author
             twitterUsername
             image
+            articleImage
             url
           }
         }
