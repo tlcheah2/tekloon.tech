@@ -23,6 +23,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -1,0 +1,18 @@
+backend:
+    name: github
+    repo: tlcheah2/tekloon-blog
+    branch: staging
+publish_mode: editorial_workflow
+media_folder: static/images
+public_folder: /images
+collections:
+    - name: blog
+      label: Blog
+      folder: "src/pages/blog"
+      preview_path: blog/preview/{{title}}
+      create: true
+      fields:
+        - { name: date, label: Date, widget: date, format: 'yyyy-MM-DD' }
+        - { name: title, label: Title }
+        - { name: tags, label: Tags, widget: list }
+        - { name: body, label: Body, widget: markdown }
