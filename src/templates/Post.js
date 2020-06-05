@@ -4,8 +4,9 @@ import Layout from '../components/Layout';
 import NavBar from '../components/NavBar';
 import SEO from '../components/Seo';
 import ArticleSeo from '../components/ArticleSeo';
+import SubscribeForm from '../components/SubscribeForm';
 import styles from './Post.module.css';
-import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'; 
 deckDeckGoHighlightElement();
 
 export default ({ data }) => {
@@ -32,6 +33,7 @@ export default ({ data }) => {
                 <p className={styles.publishedDate}>Published {post.frontmatter.date}</p>
                 <hr />
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <SubscribeForm />
             </Layout>
         </>
     );

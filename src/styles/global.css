@@ -6,7 +6,7 @@ body {
     --textTitle: black;
     --textLink: orangered;
     --hr: hsla(0, 0%, 0%, 0.2);
-  
+    --accentColor: tomato;
     background-color: var(--bg);
 }
 

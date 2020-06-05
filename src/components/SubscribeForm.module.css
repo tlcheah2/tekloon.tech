@@ -1,0 +1,91 @@
+/* Subscribe Form */
+.form-container {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.form-subscribe {
+    background-color: tomato;
+}
+
+.form-success-subscribe {
+    background-color: var(--textNormal);
+    color: var(--bg);
+}
+
+.subscribe-title {
+    font-size: 1.375rem;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+}
+
+.form-subscribe input {
+    width: 70%;
+    padding: .25em .75em;
+    margin: .5em 0;
+    outline: none;
+    border: 2.5px solid transparent;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.form-subscribe input:focus {
+    border-color: #222222;
+}
+
+.btn-subscribe {
+    width: fit-content;
+    padding: .5em 2em;
+    border: none;
+    outline: none;
+    margin-top: 1em;
+    border-radius: 24px;
+    color: white;
+    background-color: black;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    font-weight: 700;
+}
+
+.btn-subscribe:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #444444;
+}
+
+.ic-success {
+    color: green;
+    font-size: 72px;
+}
+
+.success-subscribed {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 1em 0 0 0;
+    color: var(--bg);
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 100%;
+    }
+
+    .form-subscribe input {
+        width: 90%;
+    }
+}
