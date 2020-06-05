@@ -12,7 +12,7 @@ Before we go into the details of my discovery. Let's see how this function norma
 
 ## Example Usage of `toHaveBeenCalled()`
 
-In the code below, `funcB()` is calling `funcA()`. When we write unit test for `funcB()`, we would need to ensure funcA is called as well. 
+In the code below, `funcB()` is calling `funcA()`. When we write a unit test for `funcB()`, we would need to ensure funcA is called as well. 
 
 ```js
 // funcA.js
@@ -94,6 +94,6 @@ const pass = count > 0;
 
 ## Conclusion 
 
-In this post, we discussed the detail implementation on `toHaveBeenCalled()` in Jest. I hope you now have better understanding on Jest `toHaveBeenCalled` function.
+In this post, we discussed the detailed implementation of `toHaveBeenCalled()` in Jest. I hope you now have better understanding of Jest `toHaveBeenCalled` function.
 
 
