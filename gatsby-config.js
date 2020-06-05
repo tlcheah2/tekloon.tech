@@ -85,6 +85,13 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: 'https://dev.us10.list-manage.com/subscribe/post?u=72056c738adef81f863ffe503&amp;id=4f8d34c1e7',
+          timeout: 3500, 
+      },
+    }
   ],
 
 }
