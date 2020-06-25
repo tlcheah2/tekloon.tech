@@ -23,7 +23,7 @@ I have been told that `it()` and `test()` is behaving the same way and I decided
 
 Although the documentation already speaks for it, I decided to go straight to Jest [repo](https://github.com/facebook/jest) and navigate through the source code.
 
-![Screenshot of Jest Global.ts](../images/jest-global-ts.png)
+![Screenshot of Jest Global.ts](../../images/jest-global-ts.png)
 
 Finally, this piece of [code](https://github.com/facebook/jest/blob/f776624a7c50ec04307609bf67c7b103857caec2/packages/jest-types/src/Global.ts) tells me that both `it` and `test` is the same as they are using the same interface, `ItConcurrent`.
 

@@ -42,7 +42,7 @@ Adding Favicon in Gatsby PWA is easy and you can just do it within 2 steps.
 
 The **advantages** of using this plugin to add favicon is because it will help you to generate a pre-configured set of favicon with different sizing like the picture below.
 
-![gatsby-favicon](../images/gatsby-favicon.png)
+![gatsby-favicon](../../images/gatsby-favicon.png)
 
 ## Conclusion
 In short, using this plugin save you time spending in favicon configuration.

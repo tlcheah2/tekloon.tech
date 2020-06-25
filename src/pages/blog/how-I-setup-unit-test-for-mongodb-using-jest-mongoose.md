@@ -8,7 +8,7 @@ tags:
 
 <figure>
 
-![](../images/how-i-setup-unit-test-for-mongodb-using-jest-mongoose-0.jpeg)
+![](../../images/how-i-setup-unit-test-for-mongodb-using-jest-mongoose-0.jpeg)
 
 <figcaption>Photo by <a href="https://unsplash.com/@goshua13?utm_source=medium&utm_medium=referral" class="figcaption-link">Joshua Aragon</a> on <a href="https://unsplash.com?utm_source=medium&utm_medium=referral" class="figcaption-link">Unsplash</a></figcaption></figure>
 
@@ -18,7 +18,7 @@ I am working on a backend microservices project which adopted tech stack like Mo
 
 <figure>
 
-![](../images/how-i-setup-unit-test-for-mongodb-using-jest-mongoose-1.jpeg)
+![](../../images/how-i-setup-unit-test-for-mongodb-using-jest-mongoose-1.jpeg)
 
 <figcaption>Microservices Flow and Forgive my handwriting</figcaption></figure>
 
