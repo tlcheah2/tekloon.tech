@@ -9,9 +9,9 @@ export default (props) => (
             <p className="post-date">{props.publishedDate}</p>
         </div>
         <div className="tag-container">
-            {props.tags.map((tag) => <Tag tag={tag} />)}
-        </div>        
+            {props.tags && props.tags.map((tag) => <Tag tag={tag} />)}
+        </div>
     </div>
- );
+);
 
-    
+
