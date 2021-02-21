@@ -1,21 +1,24 @@
 import React, { useState } from "react";
+import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import NavBar from '../components/NavBar';
 import styles from './Quiz.module.css';
 
 const Quiz = ({ data }) => {
-  const { question, answers, correctAnswer, quizNumber, date, explanation } = data.allSitePage.edges[0].node.context;
+  const { question, answers, correctAnswer, quizNumber, date, explanation, slug } = data.allSitePage.edges[0].node.context;
   const [showResult, setShowResult] = useState(false);
   const [showNoSelectionMsg, setShowNoSelectionMsg] = useState(false);
 
   const [selectedAnswer, setSelectedAnswer] = useState();
 
+  const seoTitle = `Daily AWS Quiz ${quizNumber}`;
   return (
     <>
+      <SEO title={seoTitle} description={question} isBlogPost={false} path={slug} />
       <NavBar />
       <Layout>
         <div>
-          <h2>Daily AWS Quiz {quizNumber} ({date})</h2>
+          <h2>{seoTitle} ({date})</h2>
           <p>{question}</p>
           {Object.entries(answers).map(([key, answer]) => {
             return (

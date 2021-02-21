@@ -54,10 +54,12 @@ exports.createPages = async ({ graphql, actions }) => {
   })
   // Create Page for all quiz Data
   quizData.forEach((quiz, index) => {
+    const slug = `/daily-quiz/quiz-${index + 1}`;
     createPage({
-      path: `/daily-quiz/quiz-${index + 1}`,
+      path: slug,
       component: path.resolve(`./src/templates/Quiz.js`),
       context: {
+        slug,
         quizNumber: index + 1,
         ...quiz,
       }
