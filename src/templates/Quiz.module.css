@@ -1,0 +1,21 @@
+input {
+  margin-right: 1.25em;
+}
+
+button, p, input {
+  margin-top: 1.25em;
+}
+
+h2 {
+  font-size: 2.225rem;
+}
+
+#results {
+  margin-top: 2em;
+}
+
+.error-msg {
+  color: red;
+  font-size: 1.05rem;
+  font-style: italic;
+}

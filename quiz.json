@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2021-02-21",
+    "question": "You decided to add more EC2 Instance & load balance the web application's traffic between the EC2 Instances. Which load balancer you SHOULD NOT choose?",
+    "answers": {
+      "a": "Classic Load Balancer",
+      "b": "Application Load Banalcer",
+      "c": "Network Load Balancer"
+    },
+    "correctAnswer": "c",
+    "explanation": "Because Network Load Balancer only used to make routing decision at TCP (or Layer 4 traffic)"
+  }
+]
