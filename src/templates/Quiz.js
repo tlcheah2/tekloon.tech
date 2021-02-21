@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SEO from '../components/SEO';
+import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 import NavBar from '../components/NavBar';
 import styles from './Quiz.module.css';
