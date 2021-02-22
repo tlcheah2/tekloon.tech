@@ -9,5 +9,16 @@
     },
     "correctAnswer": "c",
     "explanation": "Because Network Load Balancer only used to make routing decision at TCP (or Layer 4 traffic)"
+  },
+  {
+    "date": "2021-02-22",
+    "question": "You're the CTO of a startup company and have a small team of developers. You would prefer your team to focus on product development and bring value into the product and spending a minimum amount of time in managing & configuring the deployment. Which AWS Service could help you to achieve this?",
+    "answers": {
+      "a": "AWS Elastic Beanstalk",
+      "b": "Amazon Elastic Container Service (ECS)",
+      "c": "Amazon Elastic Compute Cloud (Amazon EC2)"
+    },
+    "correctAnswer": "a",
+    "explanation": "Elastic Beanstalk provisions and operates the infrastructure and manages the application stack (platform) for you, so you don't have to spend the time or develop the expertise. (From AWS Official Website). Developers could just focus on the code."
   }
 ]
