@@ -30,6 +30,6 @@
       "c": "spread"
     },
     "correctAnswer": "a",
-    "explanation": "Explanation: Tasks are placed on container instances so as to leave the least amount of unused CPU or memory. This strategy minimizes the number of container instances in use (from AWS Docs). Simply saying, it allow you to use the CPU & memory of the an instances till the max, which create lesser EC2 instances. The lesser the number of instances, the cost is lower."
+    "explanation": "Explanation: Tasks are placed on container instances so as to leave the least amount of unused CPU or memory. This strategy minimizes the number of container instances in use (from AWS Docs). Simply saying, it allow you to use the CPU & memory of the instance till the max, which create lesser EC2 instances. The lesser the number of instances, the cost is lower."
   }
 ]
