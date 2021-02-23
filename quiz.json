@@ -20,5 +20,16 @@
     },
     "correctAnswer": "a",
     "explanation": "Elastic Beanstalk provisions and operates the infrastructure and manages the application stack (platform) for you, so you don't have to spend the time or develop the expertise. (From AWS Official Website). Developers could just focus on the code."
+  },
+  {
+    "date": "2021-02-23",
+    "question": "You are running an application using Elastic Container Service (ECS). You would like to use the most cost-effective approach. Which task placement strategy would you choose to achieve your desired result?",
+    "answers": {
+      "a": "binpack",
+      "b": "random",
+      "c": "spread"
+    },
+    "correctAnswer": "a",
+    "explanation": "Explanation: Tasks are placed on container instances so as to leave the least amount of unused CPU or memory. This strategy minimizes the number of container instances in use (from AWS Docs). Simply saying, it allow you to use the CPU & memory of the an instances till the max, which create lesser EC2 instances. The lesser the number of instances, the cost is lower."
   }
 ]
