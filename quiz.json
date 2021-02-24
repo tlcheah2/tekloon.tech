@@ -31,5 +31,16 @@
     },
     "correctAnswer": "a",
     "explanation": "Explanation: Tasks are placed on container instances so as to leave the least amount of unused CPU or memory. This strategy minimizes the number of container instances in use (from AWS Docs). Simply saying, it allow you to use the CPU & memory of the instance till the max, which create lesser EC2 instances. The lesser the number of instances, the cost is lower."
+  },
+  {
+    "date": "2021-02-24",
+    "question": "Below are the supported deployment strategies for Elastic Beanstalk EXCEPT:",
+    "answers": {
+      "a": "All at once",
+      "b": "One by one",
+      "c": "Rolling"
+    },
+    "correctAnswer": "b",
+    "explanation": "The supported deployment strategies for Elastic Beanstalk are all at once, rolling, rolling with additional batch, and immutable."
   }
 ]
