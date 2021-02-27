@@ -42,5 +42,38 @@
     },
     "correctAnswer": "b",
     "explanation": "The supported deployment strategies for Elastic Beanstalk are all at once, rolling, rolling with additional batch, and immutable."
+  },
+  {
+    "date": "2021-02-25",
+    "question": "You decided to setup a development environment using Elastic Beanstalk. Which deployment strategy is the MOST suitable for the above scenario?",
+    "answers": {
+      "a": "All at once",
+      "b": "Rolling",
+      "c": "Immutable"
+    },
+    "correctAnswer": "a",
+    "explanation": "All at once deployment strategy allows you to deploy your code to the existing instances in the shortest time."
+  },
+  {
+    "date": "2021-02-26",
+    "question": "Which of the following are the benefits of the Elastic Beanstalk deployment strategy: Immutable EXCEPT: ",
+    "answers": {
+      "a": "Minimal Impact if failed deployment happened.",
+      "b": "Zero downtime",
+      "c": "Short deployment time"
+    },
+    "correctAnswer": "c",
+    "explanation": "Immutable deployment strategy has the longest deployment time compared to other deployment strategies. This is because the Immutable deployment strategy has to create a new auto-scaling group & new instances."
+  },
+  {
+    "date": "2021-02-27",
+    "question": "What is the maximum number of application versions that Elastic Beanstalk can store?",
+    "answers": {
+      "a": "2500",
+      "b": "1000",
+      "c": "1500"
+    },
+    "correctAnswer": "b",
+    "explanation": "This is the application version quota set by AWS. The quota might changed by AWS from time to time."
   }
 ]
