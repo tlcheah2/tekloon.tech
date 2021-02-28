@@ -86,5 +86,26 @@
     },
     "correctAnswer": "b",
     "explanation": "Elastic Beanstalk Lifecycle Policy allows you to configure settings to remove old application versions."
+  },
+  {
+    "date": "2021-03-01",
+    "question": "Below are the valid lifecycle rules for Elastic Beanstalk Lifecycle Policy EXCEPT:",
+    "answers": {
+      "a": "Set the application versions limit based on total count of application version",
+      "b": "Set the application versions limit based on least recently used (LRU) strategy",
+      "c": "Set the application versions limit based on the age of application versions."
+    },
+    "correctAnswer": "b",
+    "explanation": "Lifecycle Policy only allows you to configure lifecycle rule using total count & age. Lifecycle Policy will not be able to delete your application version based on the usage."
+  },
+  {
+    "date": "2021-03-02",
+    "question": "Your company decided to keep the source bundle for deployments. Can Elastic Beanstalk Lifecycle Policy help you to achieve this?",
+    "answers": {
+      "a": "Yes",
+      "b": "No"
+    },
+    "correctAnswer": "a",
+    "explanation": "Elastic Beanstalk Lifecycle Policy has the option to allow you to retain the source bundle in S3 to prevent data loss."
   }
 ]
