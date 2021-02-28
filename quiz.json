@@ -75,5 +75,16 @@
     },
     "correctAnswer": "b",
     "explanation": "This is the application version quota set by AWS. The quota might changed by AWS from time to time."
+  },
+  {
+    "date": "2021-02-28",
+    "question": "Which of the following options allow you to manage your Elastic Beanstalk application version?",
+    "answers": {
+      "a": "Elastic Beanstalk Application Manager",
+      "b": "Elastic Beanstalk Lifecycle Policy",
+      "c": "Elastic Beanstalk Extension"
+    },
+    "correctAnswer": "b",
+    "explanation": "Elastic Beanstalk Lifecycle Policy allows you to configure settings to remove old application versions."
   }
 ]
