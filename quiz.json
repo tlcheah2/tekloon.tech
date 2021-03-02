@@ -107,5 +107,38 @@
     },
     "correctAnswer": "a",
     "explanation": "Elastic Beanstalk Lifecycle Policy has the option to allow you to retain the source bundle in S3 to prevent data loss."
+  },
+  {
+    "date": "2021-03-03",
+    "question": "You would like your Elastic Beanstalk application always running in full capacity during deployment time. Which deployment strategy would be able to achieve this?",
+    "answers": {
+      "a": "Rolling",
+      "b": "All at once",
+      "c": "Rolling with additional batches"
+    },
+    "correctAnswer": "c",
+    "explanation": "Rolling with additional batches always creates a new batch of instances and deploys the new version on the new batch of instances before update the rest of the instances. This ensures our application run at full capacity at all time."
+  },
+  {
+    "date": "2021-03-04",
+    "question": "Which Amazon Services offer features such as Github, which allow you to store source code?",
+    "answers": {
+      "a": "Code Build",
+      "b": "Code Deploy",
+      "c": "Code Commit"
+    },
+    "correctAnswer": "c",
+    "explanation": "Code Commit is similar to Github, which allows having repository to store source code."
+  },
+  {
+    "date": "2021-03-05",
+    "question": "Which protocol you can use to perform your Git operations in AWS Code Commit?",
+    "answers": {
+      "a": "HTTPS",
+      "b": "SSH",
+      "c": "Both of the above"
+    },
+    "correctAnswer": "c",
+    "explanation": "AWS Code Commit supported both SSH and HTTPS like other providers such as Github, Gitlab and etc."
   }
 ]
