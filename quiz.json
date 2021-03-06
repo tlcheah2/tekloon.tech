@@ -140,5 +140,16 @@
     },
     "correctAnswer": "c",
     "explanation": "AWS Code Commit supported both SSH and HTTPS like other providers such as Github, Gitlab and etc."
+  },
+  {
+    "date": "2021-03-06",
+    "question": "Which stages in CodePipeline can create artifact?",
+    "answers": {
+      "a": "Code Build",
+      "b": "Code Deploy",
+      "c": "All stages"
+    },
+    "correctAnswer": "c",
+    "explanation": "Every stages in CodePipeline can create articfact and passed on to the next stage"
   }
 ]
