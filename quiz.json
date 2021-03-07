@@ -151,5 +151,15 @@
     },
     "correctAnswer": "c",
     "explanation": "Every stages in CodePipeline can create articfact and passed on to the next stage"
+  },
+  {
+    "date": "2021-03-07",
+    "question": "Your company's management decided to add more control to every deployment. So, now the approval of CTO is needed before release to production. Can we achieve that via Code Pipeline?",
+    "answers": {
+      "a": "Yes",
+      "b": "No"
+    },
+    "correctAnswer": "a",
+    "explanation": "We can add an action group in the pipeline which this pipeline is require manual approval from CTO before proceed to the next deployment stage"
   }
 ]

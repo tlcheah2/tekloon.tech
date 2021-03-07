@@ -21,13 +21,15 @@ const Quiz = ({ data }) => {
           <h2>{seoTitle} ({date})</h2>
           <p>{question}</p>
           {Object.entries(answers).map(([key, answer]) => {
-            return (
-              <>
-                <input type="radio" name="answerSelection" htmlFor={key} value={key} onChange={(value) => { setSelectedAnswer(value) }} />
-                <label htmlFor={key}>{answer}</label>
-                <br />
-              </>
-            );
+            if (answer) {
+              return (
+                <>
+                  <input type="radio" name="answerSelection" htmlFor={key} value={key} onChange={(value) => { setSelectedAnswer(value) }} />
+                  <label htmlFor={key}>{answer}</label>
+                  <br />
+                </>
+              );
+            }
           })}
         </div>
         <button id="submit" onClick={() => {
