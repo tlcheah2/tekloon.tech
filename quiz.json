@@ -161,5 +161,16 @@
     },
     "correctAnswer": "a",
     "explanation": "We can add an action group in the pipeline which this pipeline is require manual approval from CTO before proceed to the next deployment stage"
+  },
+  {
+    "date": "2021-03-08",
+    "question": "Which AWS Service allow you to build and run automated test for your application?",
+    "answers": {
+      "a": "Code Pipeline",
+      "b": "Code Build",
+      "c": "Code Star"
+    },
+    "correctAnswer": "b",
+    "explanation": "Code Build allow you to build your application and run test for your application. If tests failed, it will not proceed to next stage."
   }
 ]
