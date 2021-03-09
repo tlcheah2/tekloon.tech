@@ -172,5 +172,16 @@
     },
     "correctAnswer": "b",
     "explanation": "Code Build allow you to build your application and run test for your application. If tests failed, it will not proceed to next stage."
+  },
+  {
+    "date": "2021-03-09",
+    "question": "Below are the benefits of CodeBuild EXCEPT:",
+    "answers": {
+      "a": "Fully managed by AWS",
+      "b": "Low monthly fixed price",
+      "c": "Continuous Scaling - Able to scale based on your usage without worry the build queue is full and et."
+    },
+    "correctAnswer": "b",
+    "explanation": "CodeBuild is pay based on usage. If you have lesser build for this month, then you will enjoy lower cost."
   }
 ]
