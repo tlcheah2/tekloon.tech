@@ -179,7 +179,7 @@
     "answers": {
       "a": "Fully managed by AWS",
       "b": "Low monthly fixed price",
-      "c": "Continuous Scaling - Able to scale based on your usage without worry the build queue is full and et."
+      "c": "Continuous Scaling - Able to scale based on your usage without worry the build queue is full and etc."
     },
     "correctAnswer": "b",
     "explanation": "CodeBuild is pay based on usage. If you have lesser build for this month, then you will enjoy lower cost."
