@@ -183,5 +183,16 @@
     },
     "correctAnswer": "b",
     "explanation": "CodeBuild is pay based on usage. If you have lesser build for this month, then you will enjoy lower cost."
+  },
+  {
+    "date": "2021-03-10",
+    "question": "Which file you should have in order for CodeBuild to run successfully",
+    "answers": {
+      "a": "Jenkins File (Jenkinsfile)",
+      "b": "Build Specification (buildspec.yml)",
+      "c": "Continuous Integration File  (circleci.yml)"
+    },
+    "correctAnswer": "b",
+    "explanation": "CodeBuild uses the build specification (buildspec.yml) file to run a build. This file should be located in the root of the folder."
   }
 ]
