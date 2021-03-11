@@ -194,5 +194,16 @@
     },
     "correctAnswer": "b",
     "explanation": "CodeBuild uses the build specification (buildspec.yml) file to run a build. This file should be located in the root of the folder."
+  },
+  {
+    "date": "2021-03-11",
+    "question": "Your build time in CodeBuild is pretty long and you would like to optimize your build. Which of the follow could help you achieve that",
+    "answers": {
+      "a": "AWS S3 Cache Bucket",
+      "b": "ElastiCache",
+      "c": "AWS S3 Bucket Artifacts"
+    },
+    "correctAnswer": "a",
+    "explanation": "AWS S3 Cache Bucket allows you to cache some of the reuseable pieces such as dependencies, avoid re-downloading dependencies & save time."
   }
 ]
