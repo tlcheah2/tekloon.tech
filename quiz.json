@@ -197,7 +197,7 @@
   },
   {
     "date": "2021-03-11",
-    "question": "Your build time in CodeBuild is pretty long and you would like to optimize your build. Which of the follow could help you achieve that",
+    "question": "Your build time in CodeBuild is pretty long and you would like to optimize your build. Which of the follow could help you achieve that?",
     "answers": {
       "a": "AWS S3 Cache Bucket",
       "b": "ElastiCache",
@@ -205,5 +205,16 @@
     },
     "correctAnswer": "a",
     "explanation": "AWS S3 Cache Bucket allows you to cache some of the reuseable pieces such as dependencies, avoid re-downloading dependencies & save time."
+  },
+  {
+    "date": "2021-03-12",
+    "question": "You're facing difficulty in finding errors for your CodeBuild in AWS Console. Which tools you can use to enable you identify the errors faster so you could fix it?",
+    "answers": {
+      "a": "AWS CodeBuild Local Build",
+      "b": "AWS CloudWatch",
+      "c": "AWS S3 Bucket Artifacts"
+    },
+    "correctAnswer": "a",
+    "explanation": "AWS CodeBuild Local Build allows you to identify and fix errors faster from your local development environment "
   }
 ]
