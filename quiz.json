@@ -215,6 +215,17 @@
       "c": "AWS S3 Bucket Artifacts"
     },
     "correctAnswer": "a",
-    "explanation": "AWS CodeBuild Local Build allows you to identify and fix errors faster from your local development environment "
+    "explanation": "AWS CodeBuild Local Build allows you to identify and fix errors faster from your local development environment."
+  },
+  {
+    "date": "2021-03-13",
+    "question": "In order to let CodeBuild to run successfully, we need to have buildspec.yml located at where?",
+    "answers": {
+      "a": "Inside the .ebextension folder",
+      "b": "Inside the .config folder",
+      "c": "At the root of the directory"
+    },
+    "correctAnswer": "c",
+    "explanation": "buildspec.yml file should always reside at the root of the directory."
   }
 ]
