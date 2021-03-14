@@ -227,5 +227,16 @@
     },
     "correctAnswer": "c",
     "explanation": "buildspec.yml file should always reside at the root of the directory."
+  },
+  {
+    "date": "2021-03-14",
+    "question": "Which could be the reason that your application did not deploy successfully into EC2 Instances after you run the AWS Code Deploy Service?",
+    "answers": {
+      "a": "You did not install Code Deploy Agent in your EC2 Instances",
+      "b": "Your directory do not have buildspec.yml file",
+      "c": "Your EC2 Instances is located at different availability zones."
+    },
+    "correctAnswer": "a",
+    "explanation": "In order to use CodeDeploy, EC2 Instances have to install CodeDeploy agent in their machine."
   }
 ]
