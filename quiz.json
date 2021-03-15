@@ -260,5 +260,5 @@
     },
     "correctAnswer": "c",
     "explanation": "We can perform health check during this phase and make sure the application is running as expected."
-  },
+  }
 ]
