@@ -238,5 +238,27 @@
     },
     "correctAnswer": "a",
     "explanation": "In order to use CodeDeploy, EC2 Instances have to install CodeDeploy agent in their machine."
-  }
+  },
+  {
+    "date": "2021-03-15",
+    "question": "What is the correct CodeDeploy Hooks Order for EC2 Instance?",
+    "answers": {
+      "a": "Application Stop, Download Bundle, Before Install, Install, After Install, Application Start, Validate Service",
+      "b": "Download Bundle, Before Install, Install, After Install, Application Stop, Application Restart, Validate Service",
+      "c": "Download Bundle, Before Install, Install, After Install, Application Stop, Validate Service, Application Start"
+    },
+    "correctAnswer": "a",
+    "explanation": "The correct hooks order for CodeDeploy is Application Stop, Download Bundle, Before Install, Install, After Install, Application Start, Validate Service."
+  },
+  {
+    "date": "2021-03-16",
+    "question": "In which stage you should perform health check to verify the AWS Code Deploy is success and your application is working fine?",
+    "answers": {
+      "a": "Application Start",
+      "b": "After Install",
+      "c": "Validate Service"
+    },
+    "correctAnswer": "c",
+    "explanation": "We can perform health check during this phase and make sure the application is running as expected."
+  },
 ]
