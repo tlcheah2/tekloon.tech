@@ -260,5 +260,16 @@
     },
     "correctAnswer": "c",
     "explanation": "We can perform health check during this phase and make sure the application is running as expected."
+  },
+  {
+    "date": "2021-03-17",
+    "question": "Below are correct about AWS Auto Scaling Group EXCEPT:",
+    "answers": {
+      "a": "Scale out (Add EC2 Instance) when load is increase",
+      "b": "Register new EC2 Instances automatically to the Auto Scaling Group",
+      "c": "Help you save cost by removing all the EC2 Instances when there is no usage."
+    },
+    "correctAnswer": "c",
+    "explanation": "Auto Scaling Group always ensure there is a minimum number of EC2 Instance running even when there is no usage at all."
   }
 ]
