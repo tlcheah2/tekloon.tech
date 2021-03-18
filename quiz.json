@@ -278,7 +278,7 @@
     "answers": {
       "a": "24 hours",
       "b": "3 days",
-      "c": "4days"
+      "c": "4 days"
     },
     "correctAnswer": "c",
     "explanation": "The message can remain in the AWS SQS queue for 4 days by default and you can configure the message to persist up to 14 days."
