@@ -271,5 +271,16 @@
     },
     "correctAnswer": "c",
     "explanation": "Auto Scaling Group always ensure there is a minimum number of EC2 Instance running even when there is no usage at all."
+  },
+  {
+    "date": "2021-03-18",
+    "question": "By default, how long the produced message can remain in the AWS SQS queue?",
+    "answers": {
+      "a": "24 hours",
+      "b": "3 days",
+      "c": "4days"
+    },
+    "correctAnswer": "c",
+    "explanation": "The message can remain in the AWS SQS queue for 4 days by default and you can configure the message to persist up to 14 days."
   }
 ]
