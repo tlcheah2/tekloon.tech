@@ -282,5 +282,16 @@
     },
     "correctAnswer": "c",
     "explanation": "The message can remain in the AWS SQS queue for 4 days by default and you can configure the message to persist up to 14 days."
+  },
+  {
+    "date": "2021-03-19",
+    "question": "Your team are discussing to persist the queue message for longer period of time for the AWS SQS queue. They came to you and ask what is the longest possible time the message could persist?",
+    "answers": {
+      "a": "14 days",
+      "b": "30 days",
+      "c": "60 days"
+    },
+    "correctAnswer": "a",
+    "explanation": "You can configure the message in the queue to persist up to 14 days for AWS SQS queue."
   }
 ]
