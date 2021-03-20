@@ -293,5 +293,16 @@
     },
     "correctAnswer": "a",
     "explanation": "You can configure the message in the queue to persist up to 14 days for AWS SQS queue."
+  },
+  {
+    "date": "2021-03-20",
+    "question": "Your Consumer Application received a message from the AWS SQS queue, however it took few minutes for your application to process the message. Meanwhile, you realized the message was also consumed by other consumers and it cause your message was processed several times. What you can do for this situation?",
+    "answers": {
+      "a": "Enable Dead Letter Queue",
+      "b": "Increase message visibility timeout",
+      "c": "Increase delivery delay to the message"
+    },
+    "correctAnswer": "b",
+    "explanation": "Increase message visibility timeout meaning other consumers would not be able to see the message in the queue during the duration of configured timeout. Thus, other consumers would not be able to receive & process this message."
   }
 ]
