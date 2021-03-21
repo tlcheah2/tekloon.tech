@@ -304,5 +304,16 @@
     },
     "correctAnswer": "b",
     "explanation": "Increase message visibility timeout meaning other consumers would not be able to see the message in the queue during the duration of configured timeout. Thus, other consumers would not be able to receive & process this message."
+  },
+  {
+    "date": "2021-03-21",
+    "question": "If the message from the AWS SQS queue was prcoessed failed, you would like message stored somewhere so your developers could debug later. What you should do?",
+    "answers": {
+      "a": "Enable Dead Letter Queue",
+      "b": "Send logs to Amazon S3",
+      "c": "Grouping the failed to process message"
+    },
+    "correctAnswer": "a",
+    "explanation": "Dead Letter Queue is useful for debugging and it provides your developers the message content so you can discover the possibly reasons for failure."
   }
 ]
