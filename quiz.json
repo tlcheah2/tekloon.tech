@@ -315,5 +315,16 @@
     },
     "correctAnswer": "a",
     "explanation": "Dead Letter Queue is useful for debugging and it provides your developers the message content so you can discover the possibly reasons for failure."
+  },
+  {
+    "date": "2021-03-22",
+    "question": "AWS SQS queue allows you to enable for long polling. What is the maximum long polling wait time you configure?",
+    "answers": {
+      "a": "15 seconds",
+      "b": "10 seconds",
+      "c": "20 seconds"
+    },
+    "correctAnswer": "c",
+    "explanation": "AWS allows you to configure maximum 20 seconds of long polling time. Simply meaning your consumer will wait for messages in 20 seconds if there is none in the queue."
   }
 ]
