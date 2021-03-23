@@ -326,5 +326,16 @@
     },
     "correctAnswer": "c",
     "explanation": "AWS allows you to configure maximum 20 seconds of long polling time. Simply meaning your consumer will wait for messages in 20 seconds if there is none in the queue."
+  },
+  {
+    "date": "2021-03-23",
+    "question": "Which of the following are the benefits for long polling in AWS SQS queue EXCEPT:",
+    "answers": {
+      "a": "Allow you to receive and consume for more messages.",
+      "b": "Reduce empty responses by allow wait until a message is availabe until timeout",
+      "c": "Reduce cost by reduce the number of API to call for consume message"
+    },
+    "correctAnswer": "a",
+    "explanation": "Even with long polling, the message is send to consumer as soon as it is available. So, it won't accumulate the message."
   }
 ]
