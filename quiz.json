@@ -348,5 +348,16 @@
     },
     "correctAnswer": "b",
     "explanation": "SQS Extended Client allow you to specify large message whether to store in AWS S3, whuch you can retrieve the message from S3 to process by your consumer application."
+  },
+  {
+    "date": "2021-03-25",
+    "question": "Which one in the below is NOT the benefits of AWS FIFO (First-In First-Out) Queue?",
+    "answers": {
+      "a": "Avoid message duplication",
+      "b": "Unlimited number of transactions per second",
+      "c": "Message ordering"
+    },
+    "correctAnswer": "b",
+    "explanation": "AWS FIFO Queue provives benefits such as message ordering and prevents message duplication, but with limited number of transaction per second."
   }
 ]
