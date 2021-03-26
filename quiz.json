@@ -359,5 +359,15 @@
     },
     "correctAnswer": "b",
     "explanation": "AWS FIFO Queue provives benefits such as message ordering and prevents message duplication, but with limited number of transaction per second."
+  },
+  {
+    "date": "2021-03-26",
+    "question": "How do you identify a SQS queue is FIFO (First In First Out) queue?",
+    "answers": {
+      "a": "Based on the queue configuration",
+      "b": "Based on the queue name"
+    },
+    "correctAnswer": "b",
+    "explanation": "You can identify based on the queue name. All fifo queue must ends with suffix .fifo"
   }
 ]
