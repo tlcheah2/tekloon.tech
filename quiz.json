@@ -369,5 +369,16 @@
     },
     "correctAnswer": "b",
     "explanation": "You can identify based on the queue name. All fifo queue must ends with suffix .fifo"
+  },
+  {
+    "date": "2021-03-27",
+    "question": "AWS SQS FIFO queue has the minimum deduplication interval to help you prevent duplicate message such as if your client accidentally click twice for the payment. How long is the minimum depduplication inteval for SQS?",
+    "answers": {
+      "a": "3 minutes",
+      "b": "5 minutes",
+      "c": "10 minutes"
+    },
+    "correctAnswer": "b",
+    "explanation": "The minimum deduplication interval is 5 minutes, if you resend the same message within 5 minutes, the queue will treat it as a duplicate."
   }
 ]
