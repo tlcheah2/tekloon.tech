@@ -380,5 +380,27 @@
     },
     "correctAnswer": "b",
     "explanation": "The minimum deduplication interval is 5 minutes, if you resend the same message within 5 minutes, the queue will treat it as a duplicate."
+  },
+  {
+    "date": "2021-03-28",
+    "question": "Below are the supported deduplication method for AWS SQS FIFO queue EXCEPT:",
+    "answers": {
+      "a": "Content based deduplicaton using MD5 to hash the message body",
+      "b": "Content based deduplicaton using SHA-256 to hash the message body",
+      "c": "Explicitly provide a message deduplication id"
+    },
+    "correctAnswer": "a",
+    "explanation": "The deduplication method are Content based deduplicaton using SHA-256 hash or Explicitly provide a message deduplication id."
+  },
+  {
+    "date": "2021-03-29",
+    "question": "You would like to have multiple consumers for the SQS FIFO Queue for parallel processing, which of the below options allow you to do so?",
+    "answers": {
+      "a": "Message Grouping",
+      "b": "Deduplication",
+      "c": "No. You're not able to perform that in SQS FIFO queue."
+    },
+    "correctAnswer": "a",
+    "explanation": "Message that share the same Message Group Id will be within the same gorup and each Group Id can have a different consumer (parallel processing)."
   }
 ]
