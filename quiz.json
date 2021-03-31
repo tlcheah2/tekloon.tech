@@ -413,5 +413,15 @@
     },
     "correctAnswer": "b",
     "explanation": "You can create a Amazon SNS topic and have 2 event subscribers, such as email service to send welcome email and notification service to send notification to sales team to subscribe the topic and act on the message respectively."
+  },
+  {
+    "date": "2021-03-31",
+    "question": "You have an existing SNS Topic and there is a SQS subscriber subscribing to this topic. Could you add a Lambda function to subscribe to the topic?",
+    "answers": {
+      "a": "Yes. Of course",
+      "b": "No. Lambda function is not a supported subscriber."
+    },
+    "correctAnswer": "a",
+    "explanation": "SNS can integrate with a lot of AWS Services. Subscribers can be Lambda function, SQS, HTTP endpoint, Email address and etc."
   }
 ]
