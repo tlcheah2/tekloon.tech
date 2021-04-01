@@ -423,5 +423,16 @@
     },
     "correctAnswer": "a",
     "explanation": "SNS can integrate with a lot of AWS Services. Subscribers can be Lambda function, SQS, HTTP endpoint, Email address and etc."
+  },
+  {
+    "date": "2021-04-01",
+    "question": "Serverless is getting more and more popular. So which statement below is WRONG for Serverless?",
+    "answers": {
+      "a": "By using serverless architecture, developers just have to focus on coding product features without worry about managing servers.",
+      "b": "There is no servers runnning when you're using Serverless Architecture.",
+      "c": "AWS Lambda, API Gateway, and DynamoDB is serverless product as well"
+    },
+    "correctAnswer": "b",
+    "explanation": "Serverless does not mean there is no servers running. It just means that you don't have to manage or provision the server."
   }
 ]
