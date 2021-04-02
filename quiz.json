@@ -434,5 +434,16 @@
     },
     "correctAnswer": "b",
     "explanation": "Serverless does not mean there is no servers running. It just means that you don't have to manage or provision the server."
+  },
+  {
+    "date": "2021-04-02",
+    "question": "You would like to have higher processing power for your Lambda function. What you can do?",
+    "answers": {
+      "a": "Increase RAM for your Lambda function",
+      "b": "Choose the higher processing power instances for your Lambda function",
+      "c": "Create a request ticket to AWS Support to increase your lambda CPU"
+    },
+    "correctAnswer": "a",
+    "explanation": "You can only configure the RAM for Lambda function, and increasing RAM in Lambda also improve the CPU and network."
   }
 ]
