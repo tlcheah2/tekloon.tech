@@ -4,6 +4,7 @@ date: "2021-04-03"
 tags: 
   - git
   - productivity
+cover: "https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb"
 ---
 
 ![https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb](https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb)

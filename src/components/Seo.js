@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, isBlogPost, path }) {
+function SEO({ description, lang, meta, title, isBlogPost, path, postCoverImage }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -23,7 +23,7 @@ function SEO({ description, lang, meta, title, isBlogPost, path }) {
   )
 
   const metaTitle = title || site.siteMetadata.title;
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
   let twitterImage = site.siteMetadata.image;
   let canonical = `${site.url}`;
   if (isBlogPost) {
@@ -34,21 +34,25 @@ function SEO({ description, lang, meta, title, isBlogPost, path }) {
     twitterImage = site.siteMetadata.articleImage
     canonical += path
   }
+  // Override twitterImage if there is post cover image
+  if (postCoverImage) {
+    twitterImage = postCoverImage;
+  }
   return (
     <Helmet defer={false}
       htmlAttributes={{
         lang,
       }}
-      title={metaTitle} 
+      title={metaTitle}
       titleTemplate={`%s`}
       link={
         canonical
           ? [
-              {
-                rel: "canonical",
-                href: canonical,
-              },
-            ]
+            {
+              rel: "canonical",
+              href: canonical,
+            },
+          ]
           : []
       }
       meta={[
