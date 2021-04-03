@@ -445,5 +445,16 @@
     },
     "correctAnswer": "a",
     "explanation": "You can only configure the RAM for Lambda function, and increasing RAM in Lambda also improve the CPU and network."
+  },
+  {
+    "date": "2021-04-03",
+    "question": "You're planning to deploy a Docker container to AWS Lambda, what you need to do in order to make the deployment successful?",
+    "answers": {
+      "a": "You have to define Task Definition in order to succesfully deployed Docker Container to Lambda.",
+      "b": "You have to use Fargate to deploy Docker container to Lambda.",
+      "c": "No, You can't deploy Docker to Lambda."
+    },
+    "correctAnswer": "c",
+    "explanation": "You can't use Docker in Lambda, you can only use Docker in ECS and Fargate."
   }
 ]
