@@ -456,5 +456,16 @@
     },
     "correctAnswer": "c",
     "explanation": "You can't use Docker in Lambda, you can only use Docker in ECS and Fargate."
+  },
+  {
+    "date": "2021-04-04",
+    "question": "Which of the below Amazon service is suitable for Lambda Synchronous Invocation?",
+    "answers": {
+      "a": "Amazon API Gateway",
+      "b": "Amazon Simple Queue Service (SQS)",
+      "c": "Both of the above"
+    },
+    "correctAnswer": "a",
+    "explanation": "Synchoronous invocation means the result is return immediately after invocation. So, SQS is not something you could get the result right away as it have to wait for consumer application to process."
   }
 ]
