@@ -467,5 +467,16 @@
     },
     "correctAnswer": "a",
     "explanation": "Synchoronous invocation means the result is return immediately after invocation. So, SQS is not something you could get the result right away as it have to wait for consumer application to process."
+  },
+  {
+    "date": "2021-04-05",
+    "question": "You wold like to expose your Lambda function as an HTTP(S) endpoint, which Amazon service you could use to integrate with Lambda function to achieve it?",
+    "answers": {
+      "a": "Amazon API Gateway",
+      "b": "Application Load Balancer",
+      "c": "Both of the above"
+    },
+    "correctAnswer": "c",
+    "explanation": "You could use both API Gateway or ALB to expose Lambda as an HTTP function. For ALB, the lambda function must be registered in a target group."
   }
 ]
