@@ -478,5 +478,16 @@
     },
     "correctAnswer": "c",
     "explanation": "You could use both API Gateway or ALB to expose Lambda as an HTTP function. For ALB, the lambda function must be registered in a target group."
+  },
+  {
+    "date": "2021-04-06",
+    "question": "Which Amazon Service allows you enable multi headers value?",
+    "answers": {
+      "a": "Amazon API Gateway",
+      "b": "Application Load Balancer",
+      "c": "Both of the above"
+    },
+    "correctAnswer": "b",
+    "explanation": "ALB allows you to enable multi headers value. For e.g, 'https://www.example.com/?name=james&name=john' would be be passed in an array { name: ['james', 'john'] }."
   }
 ]
