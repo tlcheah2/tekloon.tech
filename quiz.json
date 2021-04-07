@@ -489,5 +489,16 @@
     },
     "correctAnswer": "b",
     "explanation": "ALB allows you to enable multi headers value. For e.g, 'https://www.example.com/?name=james&name=john' would be be passed in an array { name: ['james', 'john'] }."
+  },
+  {
+    "date": "2021-04-07",
+    "question": "You have deployed your application via Lambda function. However, you received complaint that users from some specific regions are experiencing slowness. What you should do?",
+    "answers": {
+      "a": "Use Lambda@EDGE",
+      "b": "Add more Application Load Balancer to handle the traffic",
+      "c": "Increase RAM for your Lambda function"
+    },
+    "correctAnswer": "a",
+    "explanation": "Lambda@EDGE allows your Lamnda code globally distributed. Thus, the code can run at the nearest AWS location to your users."
   }
 ]
