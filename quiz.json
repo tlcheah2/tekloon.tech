@@ -500,5 +500,16 @@
     },
     "correctAnswer": "a",
     "explanation": "Lambda@EDGE allows your Lamnda code globally distributed. Thus, the code can run at the nearest AWS location to your users."
+  },
+  {
+    "date": "2021-04-08",
+    "question": "What of the below code are the most suitable to run during Lambda Execution Context EXCEPT?",
+    "answers": {
+      "a": "Database connection",
+      "b": "Processing Request from the Client",
+      "c": "Initialize External Dependencies"
+    },
+    "correctAnswer": "b",
+    "explanation": "Connect your database code ONLY have to run once and you don't have to connect your database for every function invocation. Same to external dependencies initialization."
   }
 ]
