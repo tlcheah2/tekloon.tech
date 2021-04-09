@@ -511,5 +511,16 @@
     },
     "correctAnswer": "b",
     "explanation": "Connect your database code ONLY have to run once and you don't have to connect your database for every function invocation. Same to external dependencies initialization."
+  },
+  {
+    "date": "2021-04-09",
+    "question": "Which of the following statement is FALSE for Lambda /tmp directory?",
+    "answers": {
+      "a": "/tmp directory content will lost when Lambda runtime is shutting down",
+      "b": "/tmp directory provide maximum size of 1GB",
+      "c": "/tmp directory is suitable to be used if your Lambda function need some disk space to perform operation"
+    },
+    "correctAnswer": "b",
+    "explanation": "The maximum size of /tmp directory in the Lambda function is 512MB only."
   }
 ]
