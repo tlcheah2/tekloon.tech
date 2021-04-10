@@ -522,5 +522,16 @@
     },
     "correctAnswer": "b",
     "explanation": "The maximum size of /tmp directory in the Lambda function is 512MB only."
+  },
+  {
+    "date": "2021-04-10",
+    "question": "You deployed upload image REST API via Lambda function. The uploaded image should be stored & for future usage. Where should you save the image?",
+    "answers": {
+      "a": "S3 Bucket",
+      "b": "/tmp directory for the Lambda function",
+      "c": "Amazon Elastic Block Store (EBS)"
+    },
+    "correctAnswer": "a",
+    "explanation": "You should stored the image inside the S3 Bucket for future usage. /tmp directory content will be removed when your Lambda function shutdown. While EBS is for EC2 instances and will be removed as well if EC2 instances removed."
   }
 ]
