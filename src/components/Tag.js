@@ -10,6 +10,7 @@ const tagStyle = {
     'linux': { backgroundColor: 'var(--textNormal)', color: 'var(--bg)', textTransform: 'uppercase' },
     'git': { backgroundColor: '#F1502F', color: 'white' },
     'react': { backgroundColor: '#61DBFB', color: 'black' },
+    'rabbitmq': { backgroundColor: 'rgb(232, 78, 42)', color: 'white' },
     'default': { backgroundColor: 'var(--textNormal)', color: 'var(--bg)' }
 }
 
