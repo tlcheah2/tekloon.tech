@@ -544,5 +544,27 @@
     },
     "correctAnswer": "b",
     "explanation": "When you received Throttle Error in Lambda function, it is possible it is because of too many concurrent calls to the Lambda function. Increase the reserved concurrency limit will improve the situation."
+  },
+  {
+    "date": "2021-04-12",
+    "question": "What is the maximum reserved concurrency limit you can configured for a Lambda function?",
+    "answers": {
+      "a": "1000",
+      "b": "1500",
+      "c": "999"
+    },
+    "correctAnswer": "a",
+    "explanation": "You can configure up to 1000, You can increase the limit by opening a ticket to AWS Support."
+  },
+  {
+    "date": "2021-04-13",
+    "question": "You would like to upload your code into Lambda function and your total file size 20MB. Which of the following step is correct?",
+    "answers": {
+      "a": "Build the project & install external dependencies, ZIP the code file, Upload the ZIP straight to Lambda",
+      "b": "ZIP the code file, Upload the ZIP straight to Lambda.",
+      "c": "Build the project & install external dependencies, ZIP the code file, Upload the ZIP to S3 first."
+    },
+    "correctAnswer": "a",
+    "explanation": "You would need to build the project and install any external dependencies (if you have), zip the code file and you can upload the zip file directly because the file size does not over the limit in this scenario."
   }
 ]
