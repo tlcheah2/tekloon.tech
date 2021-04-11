@@ -533,5 +533,16 @@
     },
     "correctAnswer": "a",
     "explanation": "You should stored the image inside the S3 Bucket for future usage. /tmp directory content will be removed when your Lambda function shutdown. While EBS is for EC2 instances and will be removed as well if EC2 instances removed."
+  },
+  {
+    "date": "2021-04-11",
+    "question": "You received a complaint that the deployed Lambda function will return - 429 Thottle Error to the client application. What you can do?",
+    "answers": {
+      "a": "Add an Application Load Balancer (ALB) to resolve this issue.",
+      "b": "Increase the reserved concurrency for the Lambda function",
+      "c": "Open a ticket to AWS Support"
+    },
+    "correctAnswer": "b",
+    "explanation": "When you received Throttle Error in Lambda function, it is possible it is because of too many concurrent calls to the Lambda function. Increase the reserved concurrency limit will improve the situation."
   }
 ]
