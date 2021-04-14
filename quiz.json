@@ -566,5 +566,16 @@
     },
     "correctAnswer": "a",
     "explanation": "You would need to build the project and install any external dependencies (if you have), zip the code file and you can upload the zip file directly because the file size does not over the limit in this scenario."
+  },
+  {
+    "date": "2021-04-14",
+    "question": "You would like to upload your code into Lambda function and now your total file size is 100MB. Which of the following step is correct?",
+    "answers": {
+      "a": "Build the project & install external dependencies, ZIP the code file, Upload the ZIP straight to Lambda",
+      "b": "ZIP the code file, Upload the ZIP straight to Lambda.",
+      "c": "Build the project & install external dependencies, ZIP the code file, Upload the ZIP to S3 first."
+    },
+    "correctAnswer": "c",
+    "explanation": "You would need to build the project and install any external dependencies (if you have), zip the code file and you would need to upload to S3 first. When your total file size is more than 50MB, you would need to upload it to S3 first."
   }
 ]
