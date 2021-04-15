@@ -577,5 +577,16 @@
     },
     "correctAnswer": "c",
     "explanation": "You would need to build the project and install any external dependencies (if you have), zip the code file and you would need to upload to S3 first. When your total file size is more than 50MB, you would need to upload it to S3 first."
+  },
+  {
+    "date": "2021-04-15",
+    "question": "Which of the following allow Lambda to perform Blue/Green Deployment?",
+    "answers": {
+      "a": "Lambda Version",
+      "b": "Lambda Alias",
+      "c": "Lambda Layers"
+    },
+    "correctAnswer": "b",
+    "explanation": "Lambda alias allow you to direct traffic to 1 or 2 different versions of Lambda. For e.g, you could have 90% traffic to Version 1 and 10% traffic to Version 2."
   }
 ]
