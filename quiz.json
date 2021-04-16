@@ -588,5 +588,16 @@
     },
     "correctAnswer": "b",
     "explanation": "Lambda alias allow you to direct traffic to 1 or 2 different versions of Lambda. For e.g, you could have 90% traffic to Version 1 and 10% traffic to Version 2."
+  },
+  {
+    "date": "2021-04-16",
+    "question": "Which of the following is FALSE about DynamoDB?",
+    "answers": {
+      "a": "Serverless Database",
+      "b": "NoSQL Databasse",
+      "c": "Relational Database"
+    },
+    "correctAnswer": "c",
+    "explanation": "DynamoDB is a full managed (Serverless) NoSQL database, which means it is key-value and document database like MongoDB."
   }
 ]
