@@ -599,5 +599,16 @@
     },
     "correctAnswer": "c",
     "explanation": "DynamoDB is a full managed (Serverless) NoSQL database, which means it is key-value and document database like MongoDB."
+  },
+  {
+    "date": "2021-04-17",
+    "question": "Your company would like to deploy the new application as soon as possible. Your company decided want to have the LEAST effort in managing & developing the database. Which AWS database solution is the MOST suitable?",
+    "answers": {
+      "a": "Amazon DynamoDB",
+      "b": "Amazon Aurora",
+      "c": "Amazon Redshift"
+    },
+    "correctAnswer": "a",
+    "explanation": "DynamoDB is a full managed (Serverless) NoSQL database, which you don't have to manage the database yourself. Furthermore, DynamoDB is key-value and document database which allows you to model your data structure in a flexible manner. Thus, it is lesser effort compared to using traditional relational database."
   }
 ]
