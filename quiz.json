@@ -621,5 +621,16 @@
     },
     "correctAnswer": "a",
     "explanation": "'post_id' is the most suitable candidate as it is the unique for each blog post."
+  },
+  {
+    "date": "2021-04-19",
+    "question": "Your DynamoDB have average write of 10 objects per second with 4KB each. How many WCU (Write Capacity Units) required to ensure the write operation run smoothly?",
+    "answers": {
+      "a": "10",
+      "b": "40",
+      "c": "5"
+    },
+    "correctAnswer": "b",
+    "explanation": "1 WCU represents 1 write per second for a 1KB item. Thus, you would need 10 * 4 = 40 WCU."
   }
 ]
