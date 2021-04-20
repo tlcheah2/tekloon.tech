@@ -632,5 +632,15 @@
     },
     "correctAnswer": "b",
     "explanation": "1 WCU represents 1 write per second for a 1KB item. Thus, you would need 10 * 4 = 40 WCU."
+  },
+  {
+    "date": "2021-04-20",
+    "question": "You and your team building a transaction related microservice. In this microservice, you need to perform the query to DynamoDB in order to validate & prevent your customer double paid. Which read method you should implement in this scenario?",
+    "answers": {
+      "a": "Strongly Consistent Read",
+      "b": "Eventually Consistent Read"
+    },
+    "correctAnswer": "a",
+    "explanation": "Yes, you should use strongly consistent read as the payment operation is very critical. You would want to do the correct validation prior so you don't annoy your client by double-charge them."
   }
 ]
