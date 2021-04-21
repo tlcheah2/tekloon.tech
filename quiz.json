@@ -642,5 +642,16 @@
     },
     "correctAnswer": "a",
     "explanation": "Yes, you should use strongly consistent read as the payment operation is very critical. You would want to do the correct validation prior so you don't annoy your client by double-charge them."
+  },
+  {
+    "date": "2021-04-21",
+    "question": "Your DynamoDB have average of strongly consistent read of 10 objects with 7KB each per second. How many RCU (Read Capacity Units) you should provisioned?",
+    "answers": {
+      "a": "70",
+      "b": "18",
+      "c": "20"
+    },
+    "correctAnswer": "c",
+    "explanation": "1 RCU provide 1 strongly consistent read of 4KB item. For 7KB item, you would have round up to 8KB, which means you required 2 RCU per object. 2 * 10 objects = 20 RCU."
   }
 ]
