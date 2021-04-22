@@ -653,5 +653,16 @@
     },
     "correctAnswer": "c",
     "explanation": "1 RCU provide 1 strongly consistent read of 4KB item. For 7KB item, you would have round up to 8KB, which means you required 2 RCU per object. 2 * 10 objects = 20 RCU."
+  },
+  {
+    "date": "2021-04-22",
+    "question": "You received ProvisionedThroughputExceededExceptions error for your DynamoDB, which of the below is NOT the reason causing the error?",
+    "answers": {
+      "a": "Item being read or write is too large.",
+      "b": "Hot key issue - which means an item is being read too many times ",
+      "c": "Your provisioned storage for DynamoDB is almost full"
+    },
+    "correctAnswer": "c",
+    "explanation": "You cannot provision storage size for DynamoDB as it scaled automatically & fully managed by AWS."
   }
 ]
