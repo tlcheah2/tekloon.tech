@@ -685,5 +685,5 @@
     },
     "correctAnswer": "b",
     "explanation": "This is because the filter is applied after the scan, the RCU was consumed during scan operation. Meaning, there is still the same amount of data returned in the scanning operation. Thus, using FilterExpression would not help you reduce RCU consumption."
-  },
+  }
 ]
