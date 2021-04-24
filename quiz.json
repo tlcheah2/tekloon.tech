@@ -675,5 +675,15 @@
     },
     "correctAnswer": "a",
     "explanation": "DAX is placed between your client application and database which enable you improve the read performance by reading via the in-memory cache. Furthermore, it compatible with DynamoDB without any code change requred."
-  }
+  },
+  {
+    "date": "2021-04-24",
+    "question": "Could you reduce usage of RCU by using FilterExpression to filter for required data in DynamoDB?",
+    "answers": {
+      "a": "Yes",
+      "b": "No"
+    },
+    "correctAnswer": "b",
+    "explanation": "This is because the filter is applied after the scan, the RCU was consumed during scan operation. Meaning, there is still the same amount of data returned in the scanning operation. Thus, using FilterExpression would not help you reduce RCU consumption."
+  },
 ]
