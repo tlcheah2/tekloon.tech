@@ -685,5 +685,15 @@
     },
     "correctAnswer": "b",
     "explanation": "This is because the filter is applied after the scan, the RCU was consumed during scan operation. Meaning, there is still the same amount of data returned in the scanning operation. Thus, using FilterExpression would not help you reduce RCU consumption."
+  },
+  {
+    "date": "2021-04-25",
+    "question": "DynamoDB allows you to configure 1 partition key & 1 sort key as the primary key of the database. However, there could be situation where you need alternative choice of sort keys for query. Which of the following you can create to help the above situation?",
+    "answers": {
+      "a": "Local Secondary Index (LSI)",
+      "b": "Global Secondary Index (GSI)"
+    },
+    "correctAnswer": "a",
+    "explanation": "DynamoDB allows you configure up to 5 LSI per table so you could perform query on these indexes."
   }
 ]
