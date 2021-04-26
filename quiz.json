@@ -695,5 +695,16 @@
     },
     "correctAnswer": "a",
     "explanation": "DynamoDB allows you configure up to 5 LSI per table so you could perform query on these indexes."
+  },
+  {
+    "date": "2021-04-26",
+    "question": "Which of the following is WRONG for Local Secondary Index?",
+    "answers": {
+      "a": "You can configure up to 5 LSI per DynamoDB table",
+      "b": "You can modify/edit the LSI based on how you wanted after table creation",
+      "c": "You can define column with binary type as the LSI"
+    },
+    "correctAnswer": "b",
+    "explanation": "You can only configure LSI during the table creation. You could not add/modify the LSI after the table creation."
   }
 ]
