@@ -706,5 +706,16 @@
     },
     "correctAnswer": "b",
     "explanation": "You can only configure LSI during the table creation. You could not add/modify the LSI after the table creation."
+  },
+  {
+    "date": "2021-04-27",
+    "question": "Which of the following is TRUE for Global Secondary Index (GSI)?",
+    "answers": {
+      "a": "GSI is using the existing RCU/WCU of the defined DynamoDB table",
+      "b": "You are not allowed to add new GSI after table creation",
+      "c": "GSI is created for the purpose to speed-up queries on non-key attributes"
+    },
+    "correctAnswer": "c",
+    "explanation": "If you wanted to perform queries on non-key attributes, using GSI is the best possible ways to improve queries performance."
   }
 ]
