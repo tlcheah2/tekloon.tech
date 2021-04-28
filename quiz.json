@@ -717,5 +717,16 @@
     },
     "correctAnswer": "c",
     "explanation": "If you wanted to perform queries on non-key attributes, using GSI is the best possible ways to improve queries performance."
+  },
+  {
+    "date": "2021-04-28",
+    "question": "You realized the write operation to the DynamoDB table was quite slow and throttled. There are both Local and Global Secondary Index configured, however WCU for this table is more than enough. What could be the potential cause for this?",
+    "answers": {
+      "a": "There are too many writes in Global Secondary Index.",
+      "b": "Hot Keys Issue",
+      "c": "Items that write to database is too large"
+    },
+    "correctAnswer": "a",
+    "explanation": "If the writes is slow in GSI, the main table will be slow as well. Thus, that's why you have to be careful in chooseing GSI partition key and allocation of the RCU & WCU for the GSI"
   }
 ]
