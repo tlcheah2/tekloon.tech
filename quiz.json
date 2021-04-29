@@ -728,5 +728,16 @@
     },
     "correctAnswer": "a",
     "explanation": "If the writes is slow in GSI, the main table will be slow as well. Thus, that's why you have to be careful in chooseing GSI partition key and allocation of the RCU & WCU for the GSI"
+  },
+  {
+    "date": "2021-04-29",
+    "question": "If you're facing hot keys problem (too many reads to a specific record), which could be the best way to improve the situation?",
+    "answers": {
+      "a": "Configure a Local Secondary Index for faster read performance",
+      "b": "Configure a Global Secondary Index to speed up query",
+      "c": "Configure DynamoDB Accelerator (DAX)"
+    },
+    "correctAnswer": "c",
+    "explanation": "If there is too many reads to a particular record (popular item), the best way to resolve is using caching strategy and DAX is the best & effortless solution for it."
   }
 ]
