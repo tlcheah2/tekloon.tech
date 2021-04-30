@@ -739,5 +739,16 @@
     },
     "correctAnswer": "c",
     "explanation": "If there is too many reads to a particular record (popular item), the best way to resolve is using caching strategy and DAX is the best & effortless solution for it."
+  },
+  {
+    "date": "2021-04-30",
+    "question": "You have a DynamoDB table which record the login session token of the users. You would like to have the login session record delete from the table after the token validity passed, what you can do for this situation?",
+    "answers": {
+      "a": "Setup TTL (Time to Live) for the DynamoDB record",
+      "b": "Setup a cron job to check & remove the token periodically",
+      "c": "Setup a custom code with Lambda to process the expired login session token "
+    },
+    "correctAnswer": "a",
+    "explanation": "You can define a TTL column in DynamoDB table, which it will automatically delete the record if the TTL passed."
   }
 ]
