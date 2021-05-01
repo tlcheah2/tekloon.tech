@@ -750,5 +750,16 @@
     },
     "correctAnswer": "a",
     "explanation": "You can define a TTL column in DynamoDB table, which it will automatically delete the record if the TTL passed."
+  },
+  {
+    "date": "2021-05-01",
+    "question": "You would like to recover the expired record based on TTL in the DynamoDB. Which DynamoDB solutions would allow you to achieve this?",
+    "answers": {
+      "a": "DynamoDB Stream",
+      "b": "DynamoDB Global Secondary Index (GSI)",
+      "c": "There is no way you could recover the expired record in DynamoDB"
+    },
+    "correctAnswer": "a",
+    "explanation": "You can enable DynamoDB Stream on the table and in the process of stream records, you can choose to backup the deleted items. Thus, you will be able to recover it in case you need it again from the backup."
   }
 ]
