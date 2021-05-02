@@ -761,5 +761,15 @@
     },
     "correctAnswer": "a",
     "explanation": "You can enable DynamoDB Stream on the table and in the process of stream records, you can choose to backup the deleted items. Thus, you will be able to recover it in case you need it again from the backup."
+  },
+  {
+    "date": "2021-05-02",
+    "question": "Which is the MOST cost-effective way if you would like to clean up the DynamoDB table?",
+    "answers": {
+      "a": "Perform delete operation on all the record in the table",
+      "b": "Delete the table & Recreate the table"
+    },
+    "correctAnswer": "b",
+    "explanation": "Delete and Recreate the table is the most cost-effective and efficient way. Delete operation would consume RCU & WCU which is more expensive than drop & recreate the table."
   }
 ]
