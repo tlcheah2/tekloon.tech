@@ -771,5 +771,16 @@
     },
     "correctAnswer": "b",
     "explanation": "Delete and Recreate the table is the most cost-effective and efficient way. Delete operation would consume RCU & WCU which is more expensive than drop & recreate the table."
+  },
+  {
+    "date": "2021-05-03",
+    "question": "Which is the serverless approach to expose the REST API deployed in AWS Lambda function?",
+    "answers": {
+      "a": "Application Load Balancer (ALB)",
+      "b": "API Gateway",
+      "c": "Cloudfront"
+    },
+    "correctAnswer": "b",
+    "explanation": "API Gateway is the most easiest serverless approach to expose REST API deployed in Lambda function."
   }
 ]
