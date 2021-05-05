@@ -782,5 +782,26 @@
     },
     "correctAnswer": "b",
     "explanation": "API Gateway is the most easiest serverless approach to expose REST API deployed in Lambda function."
+  },
+  {
+    "date": "2021-05-04",
+    "question": "You have made changes to the API Gateway, the API Gateway is still reachable but however the changes still does not take effect after half an hour. What could be the problem?",
+    "answers": {
+      "a": "You did not make deployment for the changes",
+      "b": "Cache issue",
+      "c": "API Gateway is down"
+    },
+    "correctAnswer": "a",
+    "explanation": "Making changes in API Gateway doesn't mean it will take effect, you would need to make deployment for the changes for the changes to take effect."
+  },
+  {
+    "date": "2021-05-05",
+    "question": "We're unable to perform blue/green deployment using API Gateway, it can be done using Application Load Balancer (ALB). Is that CORRECT?",
+    "answers": {
+      "a": "YES !! Can be done using ALB only.",
+      "b": "NO !! API Gateway can do this too."
+    },
+    "correctAnswer": "b",
+    "explanation": "API Gateway support Canary (blue/green) deployment where you can configure 2 stages and how many % of traffic to go thorough current stages & canary stages."
   }
 ]
