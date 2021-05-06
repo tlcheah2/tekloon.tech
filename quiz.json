@@ -803,5 +803,16 @@
     },
     "correctAnswer": "b",
     "explanation": "API Gateway support Canary (blue/green) deployment where you can configure 2 stages and how many % of traffic to go thorough current stages & canary stages."
+  },
+  {
+    "date": "2021-05-06",
+    "question": "You don't want to reinvent the wheel and create login feature for your users. Which AWS solution could help you with this?",
+    "answers": {
+      "a": "Cognito User Pools",
+      "b": "Cognito Sync",
+      "c": "Cognito Identity Pools"
+    },
+    "correctAnswer": "a",
+    "explanation": "Cognito User Pool (CUP) provides sign in functionality for app users and it can easily integrate with Application Load Balancer and API Gateway."
   }
 ]
