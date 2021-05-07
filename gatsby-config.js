@@ -52,6 +52,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-highlight-code`,
           },
+          {
+            resolve: `gatsby-remark-embed-gist`,
+          }
         ],
       },
     },
@@ -88,8 +91,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-          endpoint: 'https://dev.us10.list-manage.com/subscribe/post?u=72056c738adef81f863ffe503&amp;id=4f8d34c1e7',
-          timeout: 3500, 
+        endpoint: 'https://dev.us10.list-manage.com/subscribe/post?u=72056c738adef81f863ffe503&amp;id=4f8d34c1e7',
+        timeout: 3500,
       },
     },
     `gatsby-plugin-feed`
