@@ -814,5 +814,27 @@
     },
     "correctAnswer": "a",
     "explanation": "Cognito User Pool (CUP) provides sign in functionality for app users and it can easily integrate with Application Load Balancer and API Gateway."
+  },
+  {
+    "date": "2021-05-07",
+    "question": "You're performing payment integration with 3rd party bank to your EC2 Instances, they request your IP for whitelisting so the third party bank could identify the request is from authorized host. Which of the following you should implement?",
+    "answers": {
+      "a": "Provide your EC2 Instances IP to 3rd party bank for whitelisting",
+      "b": "Create an Elastic IP for your EC2 Instances & provide the Elastic IP for whitelisting",
+      "c": "Add an Application Load Balancer (ALB) in front of the EC2 Instances and provide the Load Balancer's IP for whitelisting"
+    },
+    "correctAnswer": "b",
+    "explanation": "If you need a reserved IP address for your application, you would need Elastic IP. You can have up to 5 Elastic IP in your account."
+  },
+  {
+    "date": "2021-05-08",
+    "question": "Which of the following action is suitable to define in EC2 User Data?",
+    "answers": {
+      "a": "Install software such as Nginx, Node.js and etc",
+      "b": "Run and start your web application.",
+      "c": "Run health check for the EC2 Instances."
+    },
+    "correctAnswer": "a",
+    "explanation": "By default, EC2 User Data only run once at the instance first start. Thus, it is not suitable to run & start your web application & health check. This is because these actions does not limited to be carried out only during instance first start. For e.g, You might want to do health check every 15 minutes and deploy new changes for your application weekly."
   }
 ]
