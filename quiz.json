@@ -836,5 +836,16 @@
     },
     "correctAnswer": "a",
     "explanation": "By default, EC2 User Data only run once at the instance first start. Thus, it is not suitable to run & start your web application & health check. This is because these actions does not limited to be carried out only during instance first start. For e.g, You might want to do health check every 15 minutes and deploy new changes for your application weekly."
+  },
+  {
+    "date": "2021-05-09",
+    "question": "You're working on a hobby project, which EC2 Instance Type you is recommended if you would to deploy your hobby project?",
+    "answers": {
+      "a": "EC2 On Demand Instaces",
+      "b": "EC2 Reserved Instances",
+      "c": "EC2 Dedicated Hosts "
+    },
+    "correctAnswer": "a",
+    "explanation": "If you're unsure on how long you're going to keep your project, it's recommended to use On Demand Instances as it is pay per what you use with the flexilitity to start/stop whenever you want."
   }
 ]
