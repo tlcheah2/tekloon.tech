@@ -847,5 +847,15 @@
     },
     "correctAnswer": "a",
     "explanation": "If you're unsure on how long you're going to keep your project, it's recommended to use On Demand Instances as it is pay per what you use with the flexilitity to start/stop whenever you want."
+  },
+  {
+    "date": "2021-05-10",
+    "question": "Tom decided to help his company save cost by using Spot Instances and Tom deployed the backend microservice with Spot Instances. Is this a good solution?",
+    "answers": {
+      "a": "YES!! Absolutely genius.",
+      "b": "NO!!"
+    },
+    "correctAnswer": "b",
+    "explanation": "Spot Instances is recommended for tasks which is resilient to failure. Critical tasks such as database operation at your backend is not recommended because you might lose your Spot Instances if your configured max price is less than current Spot Instances price."
   }
 ]
