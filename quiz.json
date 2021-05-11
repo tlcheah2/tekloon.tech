@@ -857,5 +857,16 @@
     },
     "correctAnswer": "b",
     "explanation": "Spot Instances is recommended for tasks which is resilient to failure. Critical tasks such as database operation at your backend is not recommended because you might lose your Spot Instances if your configured max price is less than current Spot Instances price."
+  },
+  {
+    "date": "2021-05-11",
+    "question": "Which is TRUE for EC2 Dedicated Instances?",
+    "answers": {
+      "a": "There are no other instances can share the hardware used by the Dedicated Instances",
+      "b": "You should use Dedicated Instances when you want to have control over how instances placed in your server",
+      "c": "Dedicated instances are physically isolated with other dedicated instances belongs to other AWS accounts"
+    },
+    "correctAnswer": "c",
+    "explanation": "2 dedicated instances that comes from different AWS accounts are not allowed within the same host hardware."
   }
 ]
