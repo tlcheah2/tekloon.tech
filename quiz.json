@@ -868,5 +868,16 @@
     },
     "correctAnswer": "c",
     "explanation": "2 dedicated instances that comes from different AWS accounts are not allowed within the same host hardware."
+  },
+  {
+    "date": "2021-05-12",
+    "question": "These are the type of policy you can create using AWS IAM (Identitiy and Access Management) EXCEPT:",
+    "answers": {
+      "a": "Account-Based Policy",
+      "b": "Identity-Based Policy",
+      "c": "Resource-Based Policy"
+    },
+    "correctAnswer": "a",
+    "explanation": "Identity-based policy is basically attach to an IAM user, group or a role such as user 'tekloon' or Finance Department group. While resource-based policy attach to a resource such as Amazon S3 Buckets and the resource-based policy is define who can access the S3 Buckets."
   }
 ]
