@@ -879,5 +879,15 @@
     },
     "correctAnswer": "a",
     "explanation": "Identity-based policy is basically attach to an IAM user, group or a role such as user 'tekloon' or Finance Department group. While resource-based policy attach to a resource such as Amazon S3 Buckets and the resource-based policy is define who can access the S3 Buckets."
+  },
+  {
+    "date": "2021-05-13",
+    "question": "You're deploying a static website using Amazon S3 and you would like to allow public access to the S3 bucket so people can open your website. Which type of policy are you creating to allow public access to S3 bucket?",
+    "answers": {
+      "a": "Identity-Based Policy",
+      "b": "Resource-Based Policy"
+    },
+    "correctAnswer": "b",
+    "explanation": "You will define the permission for public access in the S3 bucket policy and Bucket policy is a Resource-based policy"
   }
 ]
