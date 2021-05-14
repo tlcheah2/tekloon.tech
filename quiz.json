@@ -889,5 +889,15 @@
     },
     "correctAnswer": "b",
     "explanation": "You will define the permission for public access in the S3 bucket policy and Bucket policy is a Resource-based policy"
+  },
+  {
+    "date": "2021-05-14",
+    "question": "When you deployed a Lambda function, there is a default execution role created for the Lambda function too. What type of policy it is for the execution role?",
+    "answers": {
+      "a": "Identity-Based Policy",
+      "b": "Resource-Based Policy"
+    },
+    "correctAnswer": "a",
+    "explanation": "By default, a role was created with AWS managed policy to execute the Lambda function and AWS managed policy is a type of Identity-Based policy."
   }
 ]
