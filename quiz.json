@@ -899,5 +899,16 @@
     },
     "correctAnswer": "a",
     "explanation": "By default, a role was created with AWS managed policy to execute the Lambda function and AWS managed policy is a type of Identity-Based policy."
+  },
+  {
+    "date": "2021-05-15",
+    "question": "Your company just hired a CFO and you created an account with full access to the billing service. However, the CFO still facing 'You Need Permissions' error message when looking into the Billing Dashboard. What could be the problem here?",
+    "answers": {
+      "a": "Mis-configuration of the policy",
+      "b": "IAM User and Role Access to Billing Info is deactivated",
+      "c": "Only root user can access to billing information, IAM users are not allowed to do so"
+    },
+    "correctAnswer": "b",
+    "explanation": "By default, the access of billing information by IAM user and role is deactivated unless root user activate it. So if the access is deactivated, you will not be able to access to the billing information even though permissions is granted."
   }
 ]
