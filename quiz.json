@@ -910,5 +910,16 @@
     },
     "correctAnswer": "b",
     "explanation": "By default, the access of billing information by IAM user and role is deactivated unless root user activate it. So if the access is deactivated, you will not be able to access to the billing information even though permissions is granted."
+  },
+  {
+    "date": "2021-05-16",
+    "question": "Which of the below is the best practice step to grant access to Billing information for a new IAM user?",
+    "answers": {
+      "a": "Use root account to activate IAM User and Role access to billing info, Create policy with billing information access permission, Create the new user & Attach to the user group (Create the group if haven't), Attach the policy created to the user group",
+      "b": "Use root account to activate IAM User and Role access to billing info, Create policy with billing information access permission, Create the new user , Attach the policy created to the user created",
+      "c": "Create policy with billing information access permission, Create the new user & Attach to the user group (Create the group if haven't), Attach the policy created to the user group"
+    },
+    "correctAnswer": "a",
+    "explanation": "The best practice is to attach the policy to the user group, this will allow the administrator to manage the permission easily. If you're assigning the permission to the individual user, it will be harder to manage when the number of users grow."
   }
 ]
