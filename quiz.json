@@ -921,5 +921,16 @@
     },
     "correctAnswer": "a",
     "explanation": "The best practice is to attach the policy to the user group, this will allow the administrator to manage the permission easily. If you're assigning the permission to the individual user, it will be harder to manage when the number of users grow."
+  },
+  {
+    "date": "2021-05-17",
+    "question": "You're developing a Nodejs application and you would like to deploy to AWS cloud. Your company prefer to have full control & flexibility over the deployment process. Which of the following you should use to achieve the request?",
+    "answers": {
+      "a": "Elastic Beanstalk",
+      "b": "CodeBuild",
+      "c": "CodeDeploy"
+    },
+    "correctAnswer": "c",
+    "explanation": "CodeDeploy provides you the full control on how you would like to deploy your application in details. It also provide CodeDeploy hooks to allow you to execute the desired tasks such as you can do health check in CodeDeploy Validate Service hook."
   }
 ]
