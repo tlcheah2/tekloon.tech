@@ -932,5 +932,16 @@
     },
     "correctAnswer": "c",
     "explanation": "CodeDeploy provides you the full control on how you would like to deploy your application in details. It also provide CodeDeploy hooks to allow you to execute the desired tasks such as you can do health check in CodeDeploy Validate Service hook."
+  },
+  {
+    "date": "2021-05-18",
+    "question": "You have a web application deployed via Elastic Beanstalk. You would like to have the deployment strategy with MINIMUM downtime and without incur any additional cost during the deployment process. Which strategy match the mentioned requirement?",
+    "answers": {
+      "a": "All at once",
+      "b": "Rolling",
+      "c": "Rolling with additional batches"
+    },
+    "correctAnswer": "b",
+    "explanation": "Rolling is the most suitable strategy as it deploy batch by batch which allows your application have zero downtime. Besides, the number of instances remain same during the deployment process and it does not create any new instance. Thus, it does not incur any additional cost too."
   }
 ]
