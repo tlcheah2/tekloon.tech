@@ -943,5 +943,16 @@
     },
     "correctAnswer": "b",
     "explanation": "Rolling is the most suitable strategy as it deploy batch by batch which allows your application have zero downtime. Besides, the number of instances remain same during the deployment process and it does not create any new instance. Thus, it does not incur any additional cost too."
+  },
+  {
+    "date": "2021-05-19",
+    "question": "Which of the following BEST describe hoq KMS Encryption works?",
+    "answers": {
+      "a": "KMS stores the CMK, then client send the data, KMS do the encryption and send the encrypted data back",
+      "b": "Client send the CMK and data, KMS perform encryption and send back the data",
+      "c": "KMS send the CMK to client, client perform the encryption and send the encrypted data"
+    },
+    "correctAnswer": "a",
+    "explanation": "The key is stored by KMS & client do not own the CMK. Further, the encryption & decryption using the CMK is happened on server side. Not the client side"
   }
 ]
