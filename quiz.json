@@ -946,7 +946,7 @@
   },
   {
     "date": "2021-05-19",
-    "question": "Which of the following BEST describe hoq KMS Encryption works?",
+    "question": "Which of the following BEST describe how KMS Encryption works?",
     "answers": {
       "a": "KMS stores the CMK, then client send the data, KMS do the encryption and send the encrypted data back",
       "b": "Client send the CMK and data, KMS perform encryption and send back the data",
