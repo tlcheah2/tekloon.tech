@@ -954,5 +954,16 @@
     },
     "correctAnswer": "a",
     "explanation": "The key is stored by KMS & client do not own the CMK. Further, the encryption & decryption using the CMK is happened on server side. Not the client side"
+  },
+  {
+    "date": "2021-05-23",
+    "question": "You're using CloudFormation Template to define a EC2 Resource. Which of the following property is a REQUIRED property to launch an EC2 Instance?",
+    "answers": {
+      "a": "AvailabilityZone",
+      "b": "ImageId",
+      "c": "InstanceType"
+    },
+    "correctAnswer": "b",
+    "explanation": "ImageId is a REQUIRED field in order to launch an instance. For InstanceType, it will default to m1.small if it is not defined. Lastly for AvailabilityZone, it will be automatically assigned as well if it is not defined."
   }
 ]
