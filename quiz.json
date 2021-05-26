@@ -965,5 +965,16 @@
     },
     "correctAnswer": "b",
     "explanation": "ImageId is a REQUIRED field in order to launch an instance. For InstanceType, it will default to m1.small if it is not defined. Lastly for AvailabilityZone, it will be automatically assigned as well if it is not defined."
+  },
+  {
+    "date": "2021-05-26",
+    "question": "You defined a parameter named 'SSHSecurityGroupDescription' in your CloudFormation Template. You would like to use the input parameter value in your CloudFormation Resources. Which of the below allow you to get the parameter value?",
+    "answers": {
+      "a": "!Param SSHSecurityGroupDescription",
+      "b": "!Ref SSHSecurityGroupDescription",
+      "c": "!GetAtt SSHSecurityGroupDescription"
+    },
+    "correctAnswer": "b",
+    "explanation": "!Ref is the shorthand of Fn::Ref which allows us to retrieve the parameter value."
   }
 ]
