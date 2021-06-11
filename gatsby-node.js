@@ -5,7 +5,15 @@ const quizData = require('./quiz.json');
 exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const { createNodeField } = actions;
-    const slug = createFilePath({ node, getNode, basePath: `pages` });
+    let slug;
+    // If there is no file absolute path, means the input is not from local file
+    if (!node.fileAbsolutePath) {
+      // use slug form 
+      slug = `/blog/${node.frontmatter.title.toString().toLowerCase().replace('/ /g', '-')}`;
+    } else {
+      // Create slug from file path
+      slug = createFilePath({ node, getNode, basePath: `pages` });
+    }
     if (slug.startsWith('/blog/')) {
       const pathBasename = path.basename(slug);
       createNodeField({
@@ -35,24 +43,36 @@ exports.createPages = async ({ graphql, actions }) => {
               fields {
                 slug
               }
+              frontmatter {
+                title
+              }
             }
           }
         }
       }
-    `);
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    const comp = node.fields.slug.startsWith('/daily-quiz') ? path.resolve(`./src/templates/Quiz.js`) : path.resolve(`./src/templates/Post.js`)
+      `);
+  result.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
+    // If node.fields is null, then it could be the data from Notion CMS
+    let slug;
+    if (!node.fields || !node.fields.slug) {
+      // convert title to slug
+      slug = node.frontmatter.title.toString().toLowerCase().replace('/ /g', '-');
+    } else {
+      slug = node.fields.slug;
+    }
+
+    const comp = path.resolve(`./src/templates/Post.js`);
     createPage({
-      path: node.fields.slug,
+      path: slug,
       component: comp,
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
-        slug: node.fields.slug,
+        slug,
       },
     })
   })
-  // Create Page for all quiz Data
+  // // Create Page for all quiz Data
   quizData.forEach((quiz, index) => {
     const slug = `/daily-quiz/quiz-${index + 1}`;
     createPage({

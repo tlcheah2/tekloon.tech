@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import moment from 'moment'
 import Layout from '../components/Layout';
 import NavBar from '../components/NavBar';
 import SEO from '../components/Seo';
@@ -13,6 +14,7 @@ export default ({ data }) => {
   const post = data.markdownRemark;
   const { siteMetadata } = data.site;
   const { slug } = post.fields;
+  const formattedPublishedDate = moment(post.frontmatter.date).format('YYYY-MM-DD');
   return (
     <>
       <SEO
@@ -27,7 +29,7 @@ export default ({ data }) => {
         description={post.excerpt}
         url={`${siteMetadata.url}${slug}`}
         isBlogPost={true}
-        datePublished={post.frontmatter.date}
+        datePublished={formattedPublishedDate}
         author={siteMetadata.author}
         imageUrl={siteMetadata.image}
         organization={siteMetadata.organization}
@@ -36,7 +38,7 @@ export default ({ data }) => {
       <NavBar />
       <Layout>
         <h1 className={styles.postTitle}>{post.frontmatter.title}</h1>
-        <p className={styles.publishedDate}>Published {post.frontmatter.date}</p>
+        <p className={styles.publishedDate}>Published {formattedPublishedDate}</p>
         <hr />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <SubscribeForm />

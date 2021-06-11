@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+require('dotenv').config();
 
 module.exports = {
   /* Your site config here */
@@ -83,7 +84,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-107667557-2",
+        trackingId: process.env.GA_TRACKING_ID,
       },
     },
     `gatsby-plugin-sitemap`,
@@ -92,10 +93,16 @@ module.exports = {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
         endpoint: 'https://dev.us10.list-manage.com/subscribe/post?u=72056c738adef81f863ffe503&amp;id=4f8d34c1e7',
-        timeout: 3500,
       },
     },
-    `gatsby-plugin-feed`
+    `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-source-notion-api`,
+      options: {
+        token: process.env.NOTION_TOKEN,
+        databaseId: process.env.NOTION_DB_ID,
+      },
+    },
   ],
 
 }
