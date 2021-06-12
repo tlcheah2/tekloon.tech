@@ -9,7 +9,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     // If there is no file absolute path, means the input is not from local file
     if (!node.fileAbsolutePath) {
       // use slug form 
-      slug = `/blog/${node.frontmatter.title.toString().toLowerCase().replace('/ /g', '-')}`;
+      slug = `/blog/${node.frontmatter.title.toString().toLowerCase().replace(/ /g, '-')}`;
     } else {
       // Create slug from file path
       slug = createFilePath({ node, getNode, basePath: `pages` });
@@ -56,7 +56,7 @@ exports.createPages = async ({ graphql, actions }) => {
     let slug;
     if (!node.fields || !node.fields.slug) {
       // convert title to slug
-      slug = node.frontmatter.title.toString().toLowerCase().replace('/ /g', '-');
+      slug = node.frontmatter.title.toString().toLowerCase().replace(/ /g, '-');
     } else {
       slug = node.fields.slug;
     }
