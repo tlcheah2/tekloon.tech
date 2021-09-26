@@ -35,7 +35,6 @@ const DevTips = () => (
           }`
         }
         render={(data) => {
-          console.log('data', data);
           return (
             <>
               {/* <div className="tag-container">
