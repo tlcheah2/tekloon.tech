@@ -16,10 +16,11 @@ const tagStyle = {
 
 export default (props) => {
     const style = tagStyle[props.tag] || tagStyle['default'];
+    const className = props.isSmall ? 'post-tag-small post-tag-with-margin-btm' : 'post-tag post-tag-with-margin-btm';
     return (
         <div
             key={props.tag}
-            className="post-tag"
+            className={className}
             style={style}>
             {props.tag}
         </div>

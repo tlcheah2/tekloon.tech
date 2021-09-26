@@ -14,21 +14,21 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       // Create slug from file path
       slug = createFilePath({ node, getNode, basePath: `pages` });
     }
-    if (slug.startsWith('/blog/')) {
-      const pathBasename = path.basename(slug);
-      createNodeField({
-        node,
-        name: `slug`,
-        value: pathBasename,
-      })
-    } else if (slug.startsWith('/daily-quiz/')) {
+    if (slug.startsWith('/daily-quiz/')) {
       // const pathBasename = path.basename(slug);
       createNodeField({
         node,
         name: `slug`,
         value: slug,
       })
-    }
+    } else {
+      const pathBasename = path.basename(slug);
+      createNodeField({
+        node,
+        name: `slug`,
+        value: pathBasename,
+      })
+    } 
   }
 
 }

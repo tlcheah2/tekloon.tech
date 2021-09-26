@@ -21,6 +21,16 @@ module.exports = {
       url: 'https://tekloon.dev',
       logo: 'https://tekloon.dev/icons/icon-512x512.png',
     },
+    menuLinks: [
+      {
+        name: 'Blog',
+        link: '/'
+      },
+      {
+        name: 'Dev Tips',
+        link: '/dev-tips'
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
