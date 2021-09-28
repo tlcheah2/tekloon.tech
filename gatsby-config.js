@@ -27,8 +27,8 @@ module.exports = {
         link: '/'
       },
       {
-        name: 'Dev Tips',
-        link: '/dev-tips'
+        name: 'Today I Learnned',
+        link: '/today-i-learned'
       },
     ],
   },

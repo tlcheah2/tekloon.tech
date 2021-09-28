@@ -6,17 +6,17 @@ import { StaticQuery, graphql } from 'gatsby';
 import Tag from '../components/Tag';
 import PostListItem from '../components/PostListItem';
 
-const DevTips = () => (
+const TodayILearned = () => (
   <>
     <NavBar />
     <Seo />
     <Layout>
-      <h2>Dev Tips</h2>
-      <p>Dev tips is a series of short tips from my daily learning.</p>
+      <h2>Today I Learned</h2>
+      <p>Today I Learned is a collection of learning & short tips from my daily learning journey as a Software Engineer.</p>
       <StaticQuery
         query={graphql`
           query {
-            allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/dev-tips/"}}) {
+            allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/today-i-learned/"}}) {
               distinct(field: frontmatter___tags)
               nodes {
                 id
@@ -58,4 +58,4 @@ const DevTips = () => (
   </>
 );
 
-export default DevTips
+export default TodayILearned

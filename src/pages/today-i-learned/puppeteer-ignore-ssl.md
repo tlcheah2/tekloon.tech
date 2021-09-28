@@ -2,7 +2,6 @@
 title: "How to Ignore Certificate Errors in Puppeteer"
 date: "2021-09-26"
 tags:
-  - nodejs
   - puppeteer
   - scraping
 ---

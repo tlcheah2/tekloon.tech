@@ -11,6 +11,7 @@ const tagStyle = {
     'git': { backgroundColor: '#F1502F', color: 'white' },
     'react': { backgroundColor: '#61DBFB', color: 'black' },
     'rabbitmq': { backgroundColor: 'rgb(232, 78, 42)', color: 'white' },
+    'docker': { backgroundColor: '#384d54', color: 'white'},
     'default': { backgroundColor: 'var(--textNormal)', color: 'var(--bg)' }
 }
 

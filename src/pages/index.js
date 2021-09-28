@@ -23,7 +23,7 @@ export default ({ data }) => (
 
 export const query = graphql`
     query {
-      allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+      allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, filter: {fileAbsolutePath: {}, fields: {isBlogPost: {eq: true}}}) {
           edges {
             node {
               id
@@ -39,7 +39,8 @@ export const query = graphql`
                 }
               }
               fields {
-                  slug
+                slug
+                isBlogPost
               }
             }
           }

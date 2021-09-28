@@ -14,23 +14,24 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       // Create slug from file path
       slug = createFilePath({ node, getNode, basePath: `pages` });
     }
+    const nodeFields = {}
     if (slug.startsWith('/daily-quiz/')) {
-      // const pathBasename = path.basename(slug);
-      createNodeField({
-        node,
-        name: `slug`,
-        value: slug,
-      })
+      nodeFields.slug = slug;
+      nodeFields.isBlogPost = false;
     } else {
-      const pathBasename = path.basename(slug);
+      // If start with blog, use only basename, such as '/blog/article-1.md', then slug will "article-1"
+      const pathBasename = slug.startsWith('/blog') ? path.basename(slug) : slug;
+      nodeFields.slug = pathBasename;
+      nodeFields.isBlogPost = slug.startsWith('/blog');
+    }
+    Object.keys(nodeFields).forEach((key) => {
       createNodeField({
         node,
-        name: `slug`,
-        value: pathBasename,
+        name: key,
+        value: nodeFields[key],
       })
-    } 
+    })
   }
-
 }
 
 exports.createPages = async ({ graphql, actions }) => {
