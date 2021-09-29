@@ -16,7 +16,7 @@ const TodayILearned = () => (
       <StaticQuery
         query={graphql`
           query {
-            allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/today-i-learned/"}}) {
+            allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, filter: {fileAbsolutePath: {regex: "/today-i-learned/"}}) {
               distinct(field: frontmatter___tags)
               nodes {
                 id
