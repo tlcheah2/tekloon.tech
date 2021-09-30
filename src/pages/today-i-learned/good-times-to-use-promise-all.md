@@ -5,7 +5,7 @@ tags:
   - javascript
 ---
 
-Today I will talk about good time to use `Promise.all()`.
+Today I will talk about the good time to use `Promise.all()`.
 
 ## Why? (The Motivation Behind)
 
@@ -16,7 +16,7 @@ As you might have known, we could use `Promise.all()` to run multiple async oper
 
 The above points leads to:
 
-- **Better Performance** since we could them concurrently
+- **Better Performance** since we could execute all of them concurrently
 - **Better Grouping** of Logic. When we could group several async operations related with each otherm, it will look cleaner and easier to understand from the code as well.
 
 Next, we will real code example on how some good time to use `Promise.all`
