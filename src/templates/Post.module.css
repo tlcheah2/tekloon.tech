@@ -1,49 +1,48 @@
 .post-title {
-    font-size: 3rem;
-    margin: 1em 0 .5em 0; 
-    font-weight: 900;
+  font-size: 3rem;
+  margin: 1em 0 0.5em 0;
+  font-weight: 900;
 }
 
 h2 {
-    font-size: 2.225rem;
+  font-size: 2.225rem;
 }
 
 h3 {
-    font-size: 2rem;
-    margin: 1.
+  font-size: 1.75rem;
 }
 
 h4 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-p, li {
-    font-size: 1.25rem;
-    line-height: 2;
+p,
+li {
+  font-size: 1.25rem;
+  line-height: 2;
 }
 
 figcaption {
-    text-align: center;
+  text-align: center;
 }
 
 code {
-    background-color: var(--textNormal);
-    color: var(--bg);
-    padding: .5em .5em;
-    border-radius: 4px;
-    font-size: .875rem;
+  background-color: var(--textNormal);
+  color: var(--bg);
+  padding: 0.5em 0.5em;
+  border-radius: 4px;
+  font-size: 0.875rem;
 }
 
 blockquote {
-    border-left: 5px solid tomato;
+  border-left: 5px solid tomato;
 }
 
 blockquote p {
-    background-color: var(--bg);
-    padding-left: 2em;
+  background-color: var(--bg);
+  padding-left: 2em;
 }
 
-
 .published-date {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
