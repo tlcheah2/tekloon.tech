@@ -1,6 +1,6 @@
 ---
 title: "How to Use Bash Function to Shorten Your CLI Command"
-date: "2020-12-22"
+date: "2022-06-18"
 tags:
   - bash
   - "aws-cli"
