@@ -9,7 +9,7 @@ By default, Terraform stores the state file locally when the `terraform plan` co
 
 The state was stored under a file named `terraform.tfstate`.
 
-However, this isn't practical because you would it is not reliable. It's just like storing your code at a remote repository such as Github vs storing your code at your local machine.
+However, this isn't practical because it is not reliable. It's just like storing your code at a remote repository such as Github vs storing your code at your local machine.
 
 Which do you feel more comfortable with? **100% for me is storing the code at a remote repository**.
 

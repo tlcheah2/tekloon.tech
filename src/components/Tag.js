@@ -12,6 +12,7 @@ const tagStyle = {
     'react': { backgroundColor: '#61DBFB', color: 'black' },
     'rabbitmq': { backgroundColor: 'rgb(232, 78, 42)', color: 'white' },
     'docker': { backgroundColor: '#384d54', color: 'white'},
+    'terraform': { bakgroundColor: '#7B42BC', color: 'white' },
     'default': { backgroundColor: 'var(--textNormal)', color: 'var(--bg)' }
 }
 
