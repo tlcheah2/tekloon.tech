@@ -24,11 +24,11 @@ module.exports = {
     menuLinks: [
       {
         name: 'Blog',
-        link: '/'
+        link: '/',
       },
       {
         name: 'Today I Learned',
-        link: '/today-i-learned'
+        link: '/today-i-learned',
       },
     ],
   },
@@ -65,7 +65,7 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-embed-gist`,
-          }
+          },
         ],
       },
     },
@@ -102,7 +102,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: 'https://dev.us10.list-manage.com/subscribe/post?u=72056c738adef81f863ffe503&amp;id=4f8d34c1e7',
+        endpoint:
+          'https://dev.us10.list-manage.com/subscribe/post?u=72056c738adef81f863ffe503&amp;id=4f8d34c1e7',
       },
     },
     `gatsby-plugin-feed`,
@@ -113,6 +114,11 @@ module.exports = {
         databaseId: process.env.NOTION_DB_ID,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-1343356331709527`,
+      },
+    },
   ],
-
-}
+};
