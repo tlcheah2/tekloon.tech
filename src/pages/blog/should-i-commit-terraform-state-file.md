@@ -17,7 +17,7 @@ The state file is a plain text **JSON** file. It will contain sensitive informat
 
 ## What is the solution?
 
-`Remote state Backend`. You can use the remote state backend such as `S3` to store your terraform state file. If you're wondering how to setup up the remote backend with S3, please check the post [here](https://tekloon.dev/terraform-store-state-aws-s3).
+**Remote state Backend**. You can use the remote state backend such as `S3` to store your terraform state file. If you're wondering how to setup up the remote backend with S3, please check the post [here](https://tekloon.dev/terraform-store-state-aws-s3).
 
 However, the next concern would be since the Terraform state file was saved in a remote backend now. Is it safe from Man in the middle(MITM) attack since the state file contains sensitive information?
 
