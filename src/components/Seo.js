@@ -1,9 +1,17 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, lang, meta, title, isBlogPost, path, postCoverImage }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  title,
+  isBlogPost,
+  path,
+  postCoverImage,
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,7 +28,7 @@ function SEO({ description, lang, meta, title, isBlogPost, path, postCoverImage 
         }
       }
     `
-  )
+  );
 
   const metaTitle = title || site.siteMetadata.title;
   const metaDescription = description || site.siteMetadata.description;
@@ -30,16 +38,17 @@ function SEO({ description, lang, meta, title, isBlogPost, path, postCoverImage 
     meta.push({
       property: `og:type`,
       content: 'article',
-    })
-    twitterImage = site.siteMetadata.articleImage
-    canonical += path
+    });
+    twitterImage = site.siteMetadata.articleImage;
+    canonical += path;
   }
   // Override twitterImage if there is post cover image
   if (postCoverImage) {
     twitterImage = postCoverImage;
   }
   return (
-    <Helmet defer={false}
+    <Helmet
+      defer={false}
       htmlAttributes={{
         lang,
       }}
@@ -48,11 +57,11 @@ function SEO({ description, lang, meta, title, isBlogPost, path, postCoverImage 
       link={
         canonical
           ? [
-            {
-              rel: "canonical",
-              href: canonical,
-            },
-          ]
+              {
+                rel: 'canonical',
+                href: canonical,
+              },
+            ]
           : []
       }
       meta={[
@@ -104,21 +113,26 @@ function SEO({ description, lang, meta, title, isBlogPost, path, postCoverImage 
         },
       ].concat(meta)}
     >
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1343356331709527"
+        crossorigin="anonymous"
+      ></script>
     </Helmet>
-  )
+  );
 }
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-}
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default SEO
+export default SEO;

@@ -114,12 +114,12 @@ module.exports = {
         databaseId: process.env.NOTION_DB_ID,
       },
     },
-    {
-      resolve: `@isamrish/gatsby-plugin-google-adsense`,
-      options: {
-        googleAdClientId: 'ca-pub-1343356331709527',
-        head: true, // Optional
-      },
-    },
+    // {
+    //   resolve: `@isamrish/gatsby-plugin-google-adsense`,
+    //   options: {
+    //     googleAdClientId: 'ca-pub-1343356331709527',
+    //     head: true, // Optional
+    //   },
+    // },
   ],
 };
