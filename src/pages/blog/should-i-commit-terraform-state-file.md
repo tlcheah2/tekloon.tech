@@ -25,9 +25,9 @@ It will depend on the remote backend itself. Terraform Cloud does provide both e
 
 While for AWS S3, you will have to configure the `encrypt` option to the S3 bucket itself. Besides, the query to the S3 bucket will go through **HTTPS** protocol, which means there would be SSL encryption in transit too.
 
-## conclusion
+## Conclusion
 
-In conclusion, do not commit the terraform state file to Github and any other source control. It is recommended to use a remote backend such as `Terraform Cloud and AWS S3.
+In conclusion, do not commit the terraform state file to Github and any other source control. It is recommended to use a remote backend such as Terraform Cloud and AWS S3.
 
 I hope this post does provide value to you and see you in the next one.
 
