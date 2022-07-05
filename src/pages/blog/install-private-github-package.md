@@ -27,7 +27,7 @@ Below is the step-by-step guide.
 
 Firstly, create the `.npmrc` in your Node project if you haven't. Paste the following template into your `.npmrc`.
 
-```
+```bash
 @OWNER:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=@TOKEN
 ```
