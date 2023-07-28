@@ -20,7 +20,7 @@ The simple answer is to set your prefetch size to `1` in your consumer channel.
 
 Below is the sample code write with npm package `amqp-connection-manager`.
 
-```ts
+```js
 import amqp from "amqp-connection-manager";
 
 async function initConsumer() {
